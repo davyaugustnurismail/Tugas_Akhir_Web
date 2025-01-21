@@ -3613,26 +3613,26 @@
     </footer>
     
     <!-- Backend Bundle JavaScript -->
-    <script src="../assets/js/backend-bundle.min.js"></script>
+    
+    <script src="{{asset('js/backend-bundle.min.js')}}"></script>
     
     <!-- Flextree Javascript-->
-    <script src="../assets/js/flex-tree.min.js"></script>
-    <script src="../assets/js/tree.js"></script>
+    <script src="{{asset('js/flex-tree.min.js')}}"></script>
+    <script src="{{asset('js/tree.js')}}"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="../assets/js/table-treeview.js"></script>
-    
+    <script src="{{assets('js/table-treeview.js')}}"></script>
     <!-- SweetAlert JavaScript -->
-    <script src="../assets/js/sweetalert.js"></script>
+    <script src="{{asset('js/sweetalert.js')}}"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="../assets/js/chart-custom.js"></script>
+    <script src="{{asset('js/chart-custom.js')}}"></script>
     
     <!-- slider JavaScript -->
-    <script src="../assets/js/slider.js"></script>
+    <script src="{{asset('js/slider.js')}}"></script>
     
     <!-- app JavaScript -->
-    <script src="../assets/js/app.js"></script>
+    <script src="{{asset('js/app.js')}}"></script>
   </body>
 
 <!-- Mirrored from templates.iqonic.design/note-plus/html/backend/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jan 2025 02:31:23 GMT -->
