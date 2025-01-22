@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   
-<!-- Mirrored from templates.iqonic.design/note-plus/html/backend/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jan 2025 02:30:52 GMT -->
+<!-- Mirrored from templates.iqonic.design/note-plus/html/backend/index by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jan 2025 02:30:52 GMT -->
 <head>
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,7 +19,7 @@
 </head>
   <body class="noteplus-layout  ">
 
-    {{-- <!-- loader Start -->
+    <!-- loader Start -->
     <div id="loading">
           <div id="loading-center">
           </div>
@@ -354,7 +354,7 @@
             </div>
         </div>
     </div>        
-    <!-- loader END --> --}}
+    <!-- loader END -->
 
     <!-- Wrapper Start -->
     <div class="wrapper">
@@ -363,8 +363,8 @@
               <nav class="navbar navbar-expand-lg navbar-light p-0">
                   <div class="iq-navbar-logo d-flex align-items-center justify-content-between">
                       <i class="ri-menu-line wrapper-menu"></i>
-                      <a href="index.html" class="header-logo">
-                              <img src="../assets/images/logo.png" class="img-fluid rounded-normal light-logo" alt="logo">
+                      <a href="home" class="header-logo">
+                              <img src="images/logo.png" class="img-fluid rounded-normal light-logo" alt="logo">
                           
                       </a>
                   </div>
@@ -404,7 +404,7 @@
                                               <a href="#" class="iq-sub-card">
                                                   <div class="media align-items-center cust-card py-3 border-bottom">
                                                       <div class="">
-                                                          <img class="avatar-50 rounded-small" src="../assets/images/user/01.jpg" alt="01">
+                                                          <img class="avatar-50 rounded-small" src=".images/user/01.jpg" alt="01">
                                                       </div>
                                                       <div class="media-body ml-3">
                                                           <div class="d-flex align-items-center justify-content-between">
@@ -418,7 +418,7 @@
                                               <a href="#" class="iq-sub-card">
                                                   <div class="media align-items-center cust-card py-3 border-bottom">
                                                       <div class="">
-                                                          <img class="avatar-50 rounded-small" src="../assets/images/user/02.jpg" alt="02">
+                                                          <img class="avatar-50 rounded-small" src=".images/user/02.jpg" alt="02">
                                                       </div>
                                                       <div class="media-body ml-3">
                                                           <div class="d-flex align-items-center justify-content-between">
@@ -432,7 +432,7 @@
                                               <a href="#" class="iq-sub-card">
                                                   <div class="media align-items-center cust-card py-3">
                                                       <div class="">
-                                                          <img class="avatar-50 rounded-small" src="../assets/images/user/03.jpg" alt="03">
+                                                          <img class="avatar-50 rounded-small" src="images/user/03.jpg" alt="03">
                                                       </div>
                                                       <div class="media-body ml-3">
                                                           <div class="d-flex align-items-center justify-content-between">
@@ -468,7 +468,7 @@
                                               <a href="#" class="iq-sub-card">
                                                   <div class="media align-items-center cust-card py-3 border-bottom">
                                                       <div class="">
-                                                          <img class="avatar-50 rounded-small" src="../assets/images/user/01.jpg" alt="01">
+                                                          <img class="avatar-50 rounded-small" src="images/user/01.jpg" alt="01">
                                                       </div>
                                                       <div class="media-body ml-3">
                                                           <div class="d-flex align-items-center justify-content-between">
@@ -482,7 +482,7 @@
                                               <a href="#" class="iq-sub-card">
                                                   <div class="media align-items-center cust-card py-3 border-bottom">
                                                       <div class="">
-                                                          <img class="avatar-50 rounded-small" src="../assets/images/user/02.jpg" alt="02">
+                                                          <img class="avatar-50 rounded-small" src="images/user/02.jpg" alt="02">
                                                       </div>
                                                       <div class="media-body ml-3">
                                                           <div class="d-flex align-items-center justify-content-between">
@@ -496,7 +496,7 @@
                                               <a href="#" class="iq-sub-card">
                                                   <div class="media align-items-center cust-card py-3">
                                                       <div class="">
-                                                          <img class="avatar-50 rounded-small" src="../assets/images/user/03.jpg" alt="03">
+                                                          <img class="avatar-50 rounded-small" src="images/user/03.jpg" alt="03">
                                                       </div>
                                                       <div class="media-body ml-3">
                                                           <div class="d-flex align-items-center justify-content-between">
@@ -517,27 +517,27 @@
                           </li>  
                           <li class="caption-content">
                              <a href="#" class="iq-user-toggle d-flex align-items-center justify-content-between" id="h-dropdownMenuButton001" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  <img src="../assets/images/user/1.jpg" class="img-fluid rounded avatar-50" alt="user">
+                                  <img src="images/user/1.jpg" class="img-fluid rounded avatar-50" alt="user">
                               </a>
                               <div class="dropdown-menu dropdown-menu-right w-100 border-0 py-2" aria-labelledby="h-dropdownMenuButton001">
-                                  <a class="dropdown-item mb-2" href="https://templates.iqonic.design/note-plus/html/app/user-profile.html">
+                                  <a class="dropdown-item mb-2" href="user-profile">
                                       <i class="lar la-user-circle font-size-20 mr-1"></i>
                                       <span class="mt-2">My Profile</span>
                                   </a>
-                                  <a class="dropdown-item mb-2" href="https://templates.iqonic.design/note-plus/html/app/user-profile-edit.html">
+                                  <a class="dropdown-item mb-2" href="user-profile-edit">
                                       <i class="las la-user-edit font-size-20 mr-1"></i>
                                       <span>Edit Profile</span>
                                   </a>
-                                  <a class="dropdown-item mb-2" href="https://templates.iqonic.design/note-plus/html/app/user-account-setting.html">
+                                  <a class="dropdown-item mb-2" href="user-account-setting">
                                       <i class="las la-user-cog font-size-20 mr-1"></i>
                                       <span>Account Settings</span>
                                   </a>
-                                  <a class="dropdown-item" href="https://templates.iqonic.design/note-plus/html/app/user-privacy-setting.html">
+                                  <a class="dropdown-item" href="user-privacy-setting">
                                       <i class="las la-user-shield font-size-20 mr-1"></i>
                                       <span>Privacy Settings</span>
                                   </a>
                                   <hr class="my-1">
-                                  <a class="dropdown-item" href="index.html">
+                                  <a class="dropdown-item" href="home">
                                       <i class="las la-sign-out-alt font-size-20 mr-1"></i>
                                       <span>Logout</span>
                                   </a>
@@ -551,8 +551,8 @@
       </div>      
       <div class="iq-sidebar  sidebar-default ">
           <div class="iq-sidebar-logo d-flex align-items-center justify-content-between">
-              <a href="index.html" class="header-logo">
-                  <img src="../assets/images/logo.png" class="img-fluid rounded-normal light-logo" alt="logo"> <h4 class="logo-title ml-3">NotePlus</h4>
+              <a href="home" class="header-logo">
+                  <img src="images/logo.png" class="img-fluid rounded-normal light-logo" alt="logo"> <h4 class="logo-title ml-3">NotePlus</h4>
               </a>
               <div class="iq-menu-bt-sidebar">
                   <i class="las la-times wrapper-menu"></i>
@@ -560,31 +560,31 @@
           </div>    
           <div class="sidebar-caption dropdown">
               <a href="#" class="iq-user-toggle d-flex align-items-center justify-content-between" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="../assets/images/user/1.jpg" class="img-fluid rounded avatar-50 mr-3" alt="user">
+                  <img src="images/user/1.jpg" class="img-fluid rounded avatar-50 mr-3" alt="user">
                   <div class="caption">
                       <h6 class="mb-0 line-height">Bud Wiser</h6>
                   </div>
                   <i class="las la-angle-down"></i>
               </a>
               <div class="dropdown-menu w-100 border-0 my-2" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item mb-2" href="https://templates.iqonic.design/note-plus/html/app/user-profile.html">
+                  <a class="dropdown-item mb-2" href="user-profile">
                       <i class="lar la-user-circle font-size-20 mr-1"></i>
                       <span class="mt-2">My Profile</span>
                   </a>
-                  <a class="dropdown-item mb-2" href="https://templates.iqonic.design/note-plus/html/app/user-profile-edit.html">
+                  <a class="dropdown-item mb-2" href="user-profile-edit">
                       <i class="las la-user-edit font-size-20 mr-1"></i>
                       <span>Edit Profile</span>
                   </a>
-                  <a class="dropdown-item mb-2" href="https://templates.iqonic.design/note-plus/html/app/user-account-setting.html">
+                  <a class="dropdown-item mb-2" href="user-account-setting">
                       <i class="las la-user-cog font-size-20 mr-1"></i>
                       <span>Account Settings</span>
                   </a>
-                  <a class="dropdown-item mb-3" href="https://templates.iqonic.design/note-plus/html/app/user-privacy-setting.html">
+                  <a class="dropdown-item mb-3" href="user-privacy-setting">
                       <i class="las la-user-shield font-size-20 mr-1"></i>
                       <span>Privacy Settings</span>
                   </a>
                   <hr class="my-2">
-                  <a class="dropdown-item" href="auth-sign-in.html">
+                  <a class="dropdown-item" href="auth-sign-in">
                       <i class="las la-sign-out-alt font-size-20 mr-1"></i>
                       <span>Logout</span>
                   </a>
@@ -600,16 +600,16 @@
               <div class="sidebar-btn dropdown mb-3">
                   <a href="#"  id="dropdownMenuButton01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-primary pr-5 position-relative iq-user-toggle d-flex align-items-center justify-content-between" style="height: 40px;"><span class="btn-title"><i class="ri-add-line mr-3"></i>Add New</span><span class="note-add-btn" style="height: 40px;"><i class="las la-angle-down"></i></span></a>
                   <div class="dropdown-menu w-100 border-0 py-3" aria-labelledby="dropdownMenuButton01">
-                      <a class="dropdown-item mb-2" href="page-new-note5d2b.html?type=blank">
+                      <a class="dropdown-item mb-2" href="page-new-note5d2b?type=blank">
                           <span><i class="ri-sticky-note-line mr-3"></i>Blank Notes</span>
                       </a>
-                      <a class="dropdown-item mb-2" href="page-new-note8fb2.html?type=todo">
+                      <a class="dropdown-item mb-2" href="page-new-note8fb2?type=todo">
                           <span><i class="ri-todo-line mr-3"></i>To-do</span>
                       </a>
-                      <a class="dropdown-item mb-2" href="page-new-notefbee.html?type=essay">
+                      <a class="dropdown-item mb-2" href="page-new-notefbee?type=essay">
                           <span><i class="ri-booklet-line mr-3"></i>Essay Notes</span>
                       </a>
-                      <a class="dropdown-item" href="page-new-note7ce5.html?type=daily">
+                      <a class="dropdown-item" href="page-new-note7ce5?type=daily">
                           <span><i class="ri-donut-chart-line mr-3"></i>Daily Reflection</span>
                       </a>
                   </div>
@@ -617,7 +617,7 @@
               <nav class="iq-sidebar-menu">
                   <ul id="iq-sidebar-toggle" class="iq-menu">
                       <li class="active">
-                              <a href="index.html" class="svg-icon">
+                              <a href="home" class="svg-icon">
                                   <i>
                                       <svg class="svg-icon" id="iq-main-1" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
@@ -641,7 +641,7 @@
                           </a>
                           <ul id="notebooks" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                               <li class="">
-                                  <a href="page-project-plans.html" class="svg-icon">
+                                  <a href="page-project-plans" class="svg-icon">
                                       <i>
                                           <svg width="20" class="svg-icon" id="iq-main-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
@@ -651,7 +651,7 @@
                                   </a>
                               </li>
                               <li class="">
-                                  <a href="page-routinenotes.html" class="svg-icon">
+                                  <a href="page-routinenotes" class="svg-icon">
                                       <i>
                                           <svg width="20" class="svg-icon" id="iq-main-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
@@ -661,7 +661,7 @@
                                   </a>
                               </li>
                               <li class="">
-                                  <a href="page-planning.html" class="svg-icon">
+                                  <a href="page-planning" class="svg-icon">
                                       <i>
                                           <svg width="20" class="svg-icon" id="iq-main-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
@@ -673,7 +673,7 @@
                           </ul>
                       </li>
                       <li class="">
-                          <a href="page-reminder.html" class="svg-icon">
+                          <a href="page-reminder" class="svg-icon">
                               <i>
                                   <svg width="20" class="svg-icon" id="iq-main-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -693,7 +693,7 @@
                           </a>
                       </li>
                       <li class="">
-                          <a href="page-bin.html" class="svg-icon">
+                          <a href="page-bin" class="svg-icon">
                               <i>
                                   <svg width="20" class="svg-icon" id="iq-main-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
@@ -727,7 +727,7 @@
                                   </a>
                                   <ul id="user" class="iq-submenu collapse" data-parent="#otherpage">
                                       <li class="">
-                                          <a href="https://templates.iqonic.design/note-plus/html/app/user-profile.html" class="svg-icon">
+                                          <a href="user-profile" class="svg-icon">
                                               <i class="">
                                                   <svg class="svg-icon" id="iq-user-1-1"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -736,7 +736,7 @@
                                           </a>
                                       </li>
                                       <li class="">
-                                          <a href="https://templates.iqonic.design/note-plus/html/app/user-add.html" class="svg-icon">
+                                          <a href="user-add" class="svg-icon">
                                               <i class="">
                                                   <svg class="svg-icon" id="iq-user-1-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
@@ -745,7 +745,7 @@
                                           </a>
                                       </li>
                                       <li class="">
-                                          <a href="https://templates.iqonic.design/note-plus/html/app/user-list.html" class="svg-icon">
+                                          <a href="user-list" class="svg-icon">
                                               <i class="">
                                                   <svg class="svg-icon" id="iq-user-1-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
@@ -768,7 +768,7 @@
                                   </a>
                                   <ul id="ui" class="iq-submenu collapse" data-parent="#otherpage">
                                           <li class="">
-                                                  <a href="ui-avatars.html" class="svg-icon">
+                                                  <a href="ui-avatars" class="svg-icon">
                                                       <i class="">
                                                           <svg class="svg-icon" id="iq-ui-1-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -777,7 +777,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-alerts.html" class="svg-icon">
+                                                  <a href="ui-alerts" class="svg-icon">
                                                       <i class="">
                                                           <svg class="svg-icon" id="iq-ui-1-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
@@ -786,7 +786,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-badges.html" class="svg-icon">
+                                                  <a href="ui-badges" class="svg-icon">
                                                       <i class="">
                                                           <svg class="svg-icon" id="iq-ui-1-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
@@ -795,7 +795,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-breadcrumb.html" class="svg-icon">
+                                                  <a href="ui-breadcrumb" class="svg-icon">
                                                       <i class="">
                                                       <svg class="svg-icon" id="iq-ui-1-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -804,7 +804,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-buttons.html" class="svg-icon">
+                                                  <a href="ui-buttons" class="svg-icon">
                                                       <i class="">
                                                           <svg class="svg-icon" id="iq-ui-1-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
@@ -813,7 +813,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-buttons-group.html" class="svg-icon">
+                                                  <a href="ui-buttons-group" class="svg-icon">
                                                       <i class="">
                                                           <svg class="svg-icon" id="iq-ui-1-5" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -822,7 +822,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-boxshadow.html" class="svg-icon">
+                                                  <a href="ui-boxshadow" class="svg-icon">
                                                       <i class="">
                                                               <svg class="svg-icon" id="iq-ui-1-6" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
@@ -831,7 +831,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-colors.html" class="svg-icon">
+                                                  <a href="ui-colors" class="svg-icon">
                                                       <i class="">
                                                       <svg class="svg-icon" id="iq-ui-1-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
@@ -840,7 +840,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-cards.html" class="svg-icon">
+                                                  <a href="ui-cards" class="svg-icon">
                                                       <i class="">
                                                       <svg  class="svg-icon" id="iq-ui-1-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
@@ -849,7 +849,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-carousel.html" class="svg-icon">
+                                                  <a href="ui-carousel" class="svg-icon">
                                                       <i class="">
                                                       <svg class="svg-icon" id="iq-ui-1-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
@@ -858,7 +858,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-grid.html" class="svg-icon">
+                                                  <a href="ui-grid" class="svg-icon">
                                                       <i class="">
                                                           <svg class="svg-icon" id="iq-ui-1-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
@@ -867,7 +867,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-helper-classes.html" class="svg-icon">
+                                                  <a href="ui-helper-classes" class="svg-icon">
                                                       <i class="">
                                                           <svg class="svg-icon" id="iq-ui-1-11" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -876,7 +876,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-images.html" class="svg-icon">
+                                                  <a href="ui-images" class="svg-icon">
                                                       <i class="">
                                                       <svg class="svg-icon" id="iq-ui-1-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -885,7 +885,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-list-group.html" class="svg-icon">
+                                                  <a href="ui-list-group" class="svg-icon">
                                                       <i class="">
                                                           <svg class="svg-icon feather feather-list" id="iq-ui-1-13" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line>
                                                           </svg>
@@ -893,7 +893,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-media-object.html" class="svg-icon">
+                                                  <a href="ui-media-object" class="svg-icon">
                                                       <i class="">
                                                       <svg class="svg-icon" id="iq-ui-1-14" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -902,7 +902,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-modal.html" class="svg-icon">
+                                                  <a href="ui-modal" class="svg-icon">
                                                       <i class="">
                                                           <svg class="svg-icon feather feather-columns" id="iq-ui-1-15" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7m0-18H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7m0-18v18"></path>
                                                           </svg>
@@ -910,7 +910,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-notifications.html" class="svg-icon">
+                                                  <a href="ui-notifications" class="svg-icon">
                                                       <i class="">
                                                       <svg  class="svg-icon" id="iq-ui-1-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
@@ -919,7 +919,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-pagination.html" class="svg-icon">
+                                                  <a href="ui-pagination" class="svg-icon">
                                                       <i class="">
                                                       <svg class="svg-icon" id="iq-ui-1-17" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
@@ -928,7 +928,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-popovers.html" class="svg-icon">
+                                                  <a href="ui-popovers" class="svg-icon">
                                                       <i class="">
                                                           <svg  class="svg-icon" id="iq-ui-1-18" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                                   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -949,7 +949,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-progressbars.html" class="svg-icon">
+                                                  <a href="ui-progressbars" class="svg-icon">
                                                       <i class="">
                                                           <svg  class="svg-icon feather feather-hard-drive" id="iq-ui-1-19" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path><line x1="6" y1="16" x2="6.01" y2="16"></line><line x1="10" y1="16" x2="10.01" y2="16"></line>
                                                           </svg>
@@ -957,7 +957,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-typography.html" class="svg-icon">
+                                                  <a href="ui-typography" class="svg-icon">
                                                       <i class="">
                                                           <svg class="svg-icon" id="iq-ui-1-20" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
@@ -967,7 +967,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-tabs.html" class="svg-icon">
+                                                  <a href="ui-tabs" class="svg-icon">
                                                       <i class="">
                                                           <svg class="svg-icon" id="iq-ui-1-21" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
@@ -977,7 +977,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-tooltips.html" class="svg-icon">
+                                                  <a href="ui-tooltips" class="svg-icon">
                                                       <i class="">
                                                           <svg  class="svg-icon" id="iq-ui-1-22" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -990,7 +990,7 @@
                                                   </a>
                                           </li>
                                           <li class="">
-                                                  <a href="ui-embed-video.html" class="svg-icon">
+                                                  <a href="ui-embed-video" class="svg-icon">
                                                       <i class="">
                                                           <svg  class="svg-icon" id="iq-ui-1-23" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -1014,7 +1014,7 @@
                                   </a>
                                   <ul id="auth" class="iq-submenu collapse" data-parent="#otherpage">
                                       <li class="">
-                                          <a href="auth-sign-in.html" class="svg-icon">
+                                          <a href="auth-sign-in" class="svg-icon">
                                               <i class="">
                                                   <svg class="svg-icon" id="iq-auth-1-1" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
@@ -1024,7 +1024,7 @@
                                           </a>
                                       </li>
                                       <li class="">
-                                          <a href="auth-sign-up.html" class="svg-icon">
+                                          <a href="auth-sign-up" class="svg-icon">
                                               <i class="">
                                                   <svg  class="svg-icon" id="iq-auth-1-2" width="20"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
@@ -1034,7 +1034,7 @@
                                           </a>
                                       </li>
                                       <li class="">
-                                          <a href="auth-recoverpw.html" class="svg-icon">
+                                          <a href="auth-recoverpw" class="svg-icon">
                                               <i class="">
                                                   <svg class="svg-icon" id="iq-auth-1-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" />
@@ -1044,7 +1044,7 @@
                                           </a>
                                       </li>
                                       <li class="">
-                                          <a href="auth-confirm-mail.html" class="svg-icon">
+                                          <a href="auth-confirm-mail" class="svg-icon">
                                               <i class="">
                                               <svg class="svg-icon" id="iq-auth-1-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76" />
@@ -1054,7 +1054,7 @@
                                           </a>
                                       </li>
                                       <li class="">
-                                          <a href="auth-lock-screen.html" class="svg-icon">
+                                          <a href="auth-lock-screen" class="svg-icon">
                                               <i class="">
                                                   <svg class="svg-icon feather feather-lock" id="iq-auth-1-5" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                                               </i>
@@ -1077,7 +1077,7 @@
                                   </a>
                                   <ul id="pricing" class="iq-submenu collapse" data-parent="#otherpage">
                                           <li class="">
-                                              <a href="pricing.html" class="svg-icon">
+                                              <a href="pricing" class="svg-icon">
                                                   <i class="">
                                                       <svg class="svg-icon" id="iq-extra-1-3-1" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -1088,7 +1088,7 @@
                                               </a>
                                           </li>
                                           <li class="">
-                                              <a href="pricing-1.html" class="svg-icon">
+                                              <a href="pricing-1" class="svg-icon">
                                                   <i class="">
                                                       <svg class="svg-icon" id="iq-extra-1-3-2" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -1113,7 +1113,7 @@
                                   </a>
                                   <ul id="pages-error" class="iq-submenu collapse" data-parent="#otherpage">
                                       <li class="">
-                                          <a href="pages-error.html" class="svg-icon">
+                                          <a href="pages-error" class="svg-icon">
                                               <i class="">
                                                   <svg class="svg-icon feather feather-alert-circle" id="iq-extra-1-4-1"  xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
                                               </i>
@@ -1121,7 +1121,7 @@
                                           </a>
                                       </li>
                                       <li class="">
-                                          <a href="pages-error-500.html" class="svg-icon">
+                                          <a href="pages-error-500" class="svg-icon">
                                               <i class="">
                                                   <svg class="svg-icon" id="iq-extra-1-4-2" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -1142,7 +1142,7 @@
                                   </ul>
                               </li>
                               <li class="">
-                                  <a href="pages-blank-page.html" class="svg-icon">
+                                  <a href="pages-blank-page" class="svg-icon">
                                       <i class="">
                                           <svg  class="svg-icon" id="iq-extra-1-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z" />
@@ -1152,7 +1152,7 @@
                                   </a>
                               </li>
                               <li class="">
-                                  <a href="pages-maintenance.html" class="svg-icon">
+                                  <a href="pages-maintenance" class="svg-icon">
                                       <i class="">
                                           <svg class="svg-icon" id="iq-extra-1-9" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -1172,7 +1172,7 @@
                   <div class="card rounded shadow-none">
                       <div class="card-body">
                           <div class="sidebarbottom-content">
-                              <div class="image"><img src="../assets/images/layouts/side-bkg.png" class="img-fluid" alt="side-bkg"></div>
+                              <div class="image"><img src="images/layouts/side-bkg.png" class="img-fluid" alt="side-bkg"></div>
                               <p class="mb-0">Set Buisness Account To Explore Premiun Features</p>
                               <button type="button" class="btn bg-primary mt-3">Upgrade</button>
                           </div>
@@ -1234,7 +1234,7 @@
                                             <a href="#" class="iq-sub-card">
                                                 <div class="media align-items-center cust-card pb-3 border-bottom">
                                                     <div class="">
-                                                        <img class="avatar-50 rounded-small" src="../assets/images/user/01.jpg" alt="01">
+                                                        <img class="avatar-50 rounded-small" src="images/user/01.jpg" alt="01">
                                                     </div>
                                                     <div class="media-body ml-3">
                                                         <div class="d-flex align-items-center justify-content-between">
@@ -1248,7 +1248,7 @@
                                             <a href="#" class="iq-sub-card">
                                                 <div class="media align-items-center cust-card py-3 border-bottom">
                                                     <div class="">
-                                                        <img class="avatar-50 rounded-small" src="../assets/images/user/02.jpg" alt="02">
+                                                        <img class="avatar-50 rounded-small" src="images/user/02.jpg" alt="02">
                                                     </div>
                                                     <div class="media-body ml-3">
                                                         <div class="d-flex align-items-center justify-content-between">
@@ -1262,7 +1262,7 @@
                                             <a href="#" class="iq-sub-card">
                                                 <div class="media align-items-center cust-card pt-3">
                                                     <div class="">
-                                                        <img class="avatar-50 rounded-small" src="../assets/images/user/03.jpg" alt="03">
+                                                        <img class="avatar-50 rounded-small" src="images/user/03.jpg" alt="03">
                                                     </div>
                                                     <div class="media-body ml-3">
                                                         <div class="d-flex align-items-center justify-content-between">
@@ -1298,7 +1298,7 @@
                                             <a href="#" class="iq-sub-card">
                                                 <div class="media align-items-center cust-card pb-3 border-bottom">
                                                     <div class="">
-                                                        <img class="avatar-50 rounded-small" src="../assets/images/user/01.jpg" alt="01">
+                                                        <img class="avatar-50 rounded-small" src="images/user/01.jpg" alt="01">
                                                     </div>
                                                     <div class="media-body ml-3">
                                                         <div class="d-flex align-items-center justify-content-between">
@@ -1312,7 +1312,7 @@
                                             <a href="#" class="iq-sub-card">
                                                 <div class="media align-items-center cust-card py-3 border-bottom">
                                                     <div class="">
-                                                        <img class="avatar-50 rounded-small" src="../assets/images/user/02.jpg" alt="02">
+                                                        <img class="avatar-50 rounded-small" src="images/user/02.jpg" alt="02">
                                                     </div>
                                                     <div class="media-body ml-3">
                                                         <div class="d-flex align-items-center justify-content-between">
@@ -1326,7 +1326,7 @@
                                             <a href="#" class="iq-sub-card">
                                                 <div class="media align-items-center cust-card pt-3">
                                                     <div class="">
-                                                        <img class="avatar-50 rounded-small" src="../assets/images/user/03.jpg" alt="03">
+                                                        <img class="avatar-50 rounded-small" src="images/user/03.jpg" alt="03">
                                                     </div>
                                                     <div class="media-body ml-3">
                                                         <div class="d-flex align-items-center justify-content-between">
@@ -1371,8 +1371,8 @@
                                                         <li>Balloons</li>
                                                         <li>Cold Drinks</li>
                                                     </ul>
-                                                    <img src="../assets/images/event-note/01.png" class="img-fluid image-1" alt="image">                                                    
-                                                    <img src="../assets/images/event-note/02.png" class="img-fluid image-2" alt="image">
+                                                    <img src="images/event-note/01.png" class="img-fluid image-1" alt="image">                                                    
+                                                    <img src="images/event-note/02.png" class="img-fluid image-2" alt="image">
                                                 </div>
                                             </div>
                                         </div>
@@ -1660,17 +1660,17 @@
                                                         <ul class="row mb-0 p-0 list-inline flex-wrap align-items-center">
                                                             <li class="col-4">
                                                                 <a href="#">
-                                                                    <img src="../assets/images/gallery/grid/08.jpg" class="img-fluid note-image rounded" alt="" />  
+                                                                    <img src="images/gallery/grid/08.jpg" class="img-fluid note-image rounded" alt="" />  
                                                                 </a> 
                                                             </li>
                                                             <li class="col-4">
                                                                 <a href="#">
-                                                                    <img src="../assets/images/gallery/grid/05.jpg" class="img-fluid note-image rounded" alt="" />  
+                                                                    <img src="images/gallery/grid/05.jpg" class="img-fluid note-image rounded" alt="" />  
                                                                 </a> 
                                                             </li>
                                                             <li class="col-4">
                                                                 <a href="#">
-                                                                    <img src="../assets/images/gallery/grid/03.jpg" class="img-fluid note-image rounded" alt="" />  
+                                                                    <img src="images/gallery/grid/03.jpg" class="img-fluid note-image rounded" alt="" />  
                                                                 </a> 
                                                             </li>
                                                         </ul>
@@ -2441,17 +2441,17 @@
                                                         <ul class="row mb-0 p-0 list-inline flex-wrap align-items-center">
                                                             <li class="col-4">
                                                                 <a href="#">
-                                                                    <img src="../assets/images/gallery/grid/01.jpg" class="img-fluid rounded" alt="" />  
+                                                                    <img src="images/gallery/grid/01.jpg" class="img-fluid rounded" alt="" />  
                                                                 </a> 
                                                             </li>
                                                             <li class="col-4">
                                                                 <a href="#">
-                                                                    <img src="../assets/images/gallery/grid/02.jpg" class="img-fluid rounded" alt="" />  
+                                                                    <img src="images/gallery/grid/02.jpg" class="img-fluid rounded" alt="" />  
                                                                 </a> 
                                                             </li>
                                                             <li class="col-4">
                                                                 <a href="#">
-                                                                    <img src="../assets/images/gallery/grid/03.jpg" class="img-fluid rounded" alt="" />  
+                                                                    <img src="images/gallery/grid/03.jpg" class="img-fluid rounded" alt="" />  
                                                                 </a> 
                                                             </li>
                                                         </ul>
@@ -2961,17 +2961,17 @@
                                                         <ul class="row mb-0 p-0 list-inline flex-wrap align-items-center">
                                                             <li class="col-4">
                                                                 <a href="#">
-                                                                    <img src="../assets/images/gallery/grid/01.jpg" class="img-fluid rounded" alt="" />  
+                                                                    <img src="images/gallery/grid/01.jpg" class="img-fluid rounded" alt="" />  
                                                                 </a> 
                                                             </li>
                                                             <li class="col-4">
                                                                 <a href="#">
-                                                                    <img src="../assets/images/gallery/grid/02.jpg" class="img-fluid rounded" alt="" />  
+                                                                    <img src="images/gallery/grid/02.jpg" class="img-fluid rounded" alt="" />  
                                                                 </a> 
                                                             </li>
                                                             <li class="col-4">
                                                                 <a href="#">
-                                                                    <img src="../assets/images/gallery/grid/03.jpg" class="img-fluid rounded" alt="" />  
+                                                                    <img src="images/gallery/grid/03.jpg" class="img-fluid rounded" alt="" />  
                                                                 </a> 
                                                             </li>
                                                         </ul>
@@ -3202,7 +3202,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card mb-3">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/01.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="images/user/01.jpg" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -3216,7 +3216,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card mb-3">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/02.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="images/user/02.jpg" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -3230,7 +3230,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/03.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="images/user/03.jpg" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -3342,32 +3342,32 @@
                                 <ul class="row mb-0 p-0 list-inline flex-wrap align-items-center">
                                     <li class="col-md-4 mb-4">
                                         <a href="#">
-                                            <img src="../assets/images/gallery/grid/01.jpg" class="img-fluid rounded avatar-150" alt="">  
+                                            <img src="images/gallery/grid/01.jpg" class="img-fluid rounded avatar-150" alt="">  
                                         </a> 
                                     </li>
                                     <li class="col-md-4 mb-4">
                                         <a href="#">
-                                            <img src="../assets/images/gallery/grid/02.jpg" class="img-fluid rounded avatar-150" alt="">  
+                                            <img src="images/gallery/grid/02.jpg" class="img-fluid rounded avatar-150" alt="">  
                                         </a> 
                                     </li>
                                     <li class="col-md-4 mb-4">
                                         <a href="#">
-                                            <img src="../assets/images/gallery/grid/03.jpg" class="img-fluid rounded avatar-150" alt="">  
+                                            <img src="images/gallery/grid/03.jpg" class="img-fluid rounded avatar-150" alt="">  
                                         </a> 
                                     </li>
                                     <li class="col-md-4">
                                         <a href="#">
-                                            <img src="../assets/images/gallery/grid/04.jpg" class="img-fluid rounded avatar-150" alt="">  
+                                            <img src="images/gallery/grid/04.jpg" class="img-fluid rounded avatar-150" alt="">  
                                         </a> 
                                     </li>
                                     <li class="col-md-4">
                                         <a href="#">
-                                            <img src="../assets/images/gallery/grid/05.jpg" class="img-fluid rounded avatar-150" alt="">  
+                                            <img src="images/gallery/grid/05.jpg" class="img-fluid rounded avatar-150" alt="">  
                                         </a> 
                                     </li>
                                     <li class="col-md-4">
                                         <a href="#">
-                                            <img src="../assets/images/gallery/grid/06.jpg" class="img-fluid rounded avatar-150" alt="">  
+                                            <img src="images/gallery/grid/06.jpg" class="img-fluid rounded avatar-150" alt="">  
                                         </a> 
                                     </li>
                                 </ul>
@@ -3377,7 +3377,7 @@
                                 <li>
                                     <div class="media align-items-center cust-card mb-3">
                                         <div class="">
-                                            <img class="avatar-50 rounded-small" src="../assets/images/user/04.jpg" alt="01">
+                                            <img class="avatar-50 rounded-small" src="images/user/04.jpg" alt="01">
                                         </div>
                                         <div class="media-body ml-3">
                                             <div class="d-flex align-items-center justify-content-between">
@@ -3410,7 +3410,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card mb-3">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/04.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="images/user/04.jpg" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -3424,7 +3424,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card mb-3">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/05.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="images/user/05.jpg" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -3479,7 +3479,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card mb-3">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/06.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="images/user/06.jpg" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -3493,7 +3493,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card mb-3">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/07.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="images/user/07.jpg" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -3507,7 +3507,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card mb-3">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/08.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="images/user/08.jpg" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -3521,7 +3521,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card mb-3">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/09.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="images/user/09.jpg" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -3601,8 +3601,8 @@
             <div class="row">
                 <div class="col-lg-6">
                     <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li class="list-inline-item"><a href="terms-of-service.html">Terms of Use</a></li>
+                        <li class="list-inline-item"><a href="privacy-policy">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="terms-of-service">Terms of Use</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6 text-right">
@@ -3621,7 +3621,7 @@
     <script src="{{asset('js/tree.js')}}"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="{{assets('js/table-treeview.js')}}"></script>
+    <script src="{{asset('js/table-treeview.js')}}"></script>
     <!-- SweetAlert JavaScript -->
     <script src="{{asset('js/sweetalert.js')}}"></script>
     
@@ -3635,5 +3635,5 @@
     <script src="{{asset('js/app.js')}}"></script>
   </body>
 
-<!-- Mirrored from templates.iqonic.design/note-plus/html/backend/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jan 2025 02:31:23 GMT -->
+<!-- Mirrored from templates.iqonic.design/note-plus/html/backend/index by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jan 2025 02:31:23 GMT -->
 </html>
