@@ -158,19 +158,19 @@
                             <div class="col-md-8">
                                 <form action="#">
                                     <div class="form-group">
-                                        <label class="label-control">Title</label>
-                                        <input type="text" class="form-control" name="title" placeholder="Example Note" value="" data-change="input" data-custom-target="#note-title">
+                                        <label class="label-control">Judul</label>
+                                        <input type="text" class="form-control" name="title" placeholder="Nama Judul" value="" data-change="input" data-custom-target="#note-title">
                                     </div>
                                     <div class="form-group">
-                                        <label class="label-control">Description</label>
-                                        <textarea type="text" class="form-control" name="description" rows="3" data-change="input" data-custom-target="#note-description" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."></textarea>
+                                        <label class="label-control">Deskripsi</label>
+                                        <textarea type="text" class="form-control" name="description" rows="3" data-change="input" data-custom-target="#note-description" placeholder="Isi Deskripsi"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <label class="label-control">Reminder Date</label>
+                                        <label class="label-control">Tanggal</label>
                                         <input type="date" class="form-control" name="reminder_date" value="2021-01-01" data-change="input" data-custom-target="#note-reminder-date">
                                     </div>
                                     <div class="form-group">
-                                        <label class="label-control">Icon</label>
+                                        <label class="label-control">Tanda</label>
                                         <div id="icon-button">
                                             <button class="btn btn-outline-primary ml-1 active" type="button" data-change="click" data-custom-target="#note-icon">
                                                 <svg width="23" class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -217,7 +217,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="label-control">Priority</label>
+                                        <label class="label-control">Label Prioritas</label>
                                         <div>
                                             <select name="priority" id="" class="form-control" data-change="select" data-custom-target="color">
                                                 <option value="primary">Default</option>
@@ -239,7 +239,7 @@
                                         <svg width="20" class="svg-icon" id="new-note-save" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
                                         </svg>
-                                        Save
+                                        Simpan
                                     </button>
                                 </form>
                             </div>
@@ -260,14 +260,14 @@
                                                 <div class="dropdown-menu dropdown-menu-right"
                                                     aria-labelledby="dropdownMenuButton4" style="">
                                                     <a href="#" class="dropdown-item new-note1" data-toggle="modal" data-custom-target="#new-note1"><i class="ri-eye-line mr-3"></i>View</a>
-                                                    <a class="dropdown-item" href="#"><i class="las la-trash-alt mr-3"></i>Delete</a>
+                                                    <a class="dropdown-item" href="#"><i class="las la-trash-alt mr-3"></i>Hapus</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-body rounded">
-                                        <h4 class="card-title text-ellipsis short-1" id="note-title">Example Note</h4>
-                                        <p class="mb-3 text-ellipsis short-6" id="note-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        <h4 class="card-title text-ellipsis short-1" id="note-title">Nama Judul</h4>
+                                        <p class="mb-3 text-ellipsis short-6" id="note-description">Isi Deskripsi</p>
                                     </div>
                                     <div class="card-footer">
                                         <div class="d-flex align-items-center justify-content-between note-text note-text-info"> 
@@ -305,7 +305,7 @@
                     </div>
                 </div>
                 <div class="card-body rounded">
-                    <h4 class="card-title text-ellipsis short-1" id="note-title">Example Note</h4>
+                    <h4 class="card-title text-ellipsis short-1" id="note-title">Nama Judul</h4>
                     <p class="mb-3 text-ellipsis short-6" id="note-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
                 <div class="card-footer">

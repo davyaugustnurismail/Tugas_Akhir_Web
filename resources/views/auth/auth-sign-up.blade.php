@@ -7,10 +7,10 @@
                <div class="col-md-5 col-sm-12 col-12 align-self-center">
                   <div class="sign-user_card">
                      <div class="logo-detail">            
-                           <div class="d-flex align-items-center"><img src="../assets/images/logo.png" class="img-fluid rounded-normal light-logo logo" alt="logo"> <h4 class="logo-title ml-3">NotePlus</h4></div>
+                           <div class="d-flex align-items-center"><img src="{{ url('images/logo.png') }}" class="img-fluid rounded-normal light-logo logo" alt="logo"> <h4 class="logo-title ml-3">SmeaBook</h4></div>
                      </div>  
                      <h3 class="mb-2">Sign Up</h3>
-                     <p>Create your  account.</p>
+                     <p>Buat Akun Anda</p>
                      <form>
                         <div class="row">
                            <div class="col-lg-6">
@@ -52,7 +52,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Sign Up</button>
                         <p class="mt-3 mb-0">
-                           Already have an Account <a href="auth-sign-in.html" class="text-primary"><b>Sign In</b></a>
+                           Already have an Account <a href="{{ route('auth.sign-in') }}" class="text-primary"><b>Sign In</b></a>
                         </p>
                      </form>
                   </div>
