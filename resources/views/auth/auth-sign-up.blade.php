@@ -11,6 +11,7 @@
                      </div>  
                      <h3 class="mb-2">Sign Up</h3>
                      <p>Buat Akun Anda</p>
+                     <p>Buat Akun Anda</p>
                      <form>
                         <div class="row">
                            <div class="col-lg-6">
