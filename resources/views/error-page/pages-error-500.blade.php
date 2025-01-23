@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>NotePlus | Responsive Bootstrap 4 Admin Dashboard Template</title>
+      <title>SmeaBook</title>
       
       <!-- Favicon -->
       <link rel="shortcut icon" href="https://templates.iqonic.design/note-plus/html/assets/images/favicon.ico" />
@@ -31,7 +31,7 @@
          <div class="row no-gutters height-self-center">
             <div class="col-sm-12 text-center align-self-center">
                <div class="iq-error position-relative">
-                     <img src="../assets/images/error/500.png" class="img-fluid iq-error-img" alt="">
+                     <img src="{{url('{{url('../assets/images/error/500.png')}}" class="img-fluid iq-error-img" alt="">
                      <h2 class="mb-0">Oops! This Page is Not Working.</h2>
                      <p>The requested is Internal Server Error.</p>
                      <a class="btn btn-primary d-inline-flex align-items-center mt-3" href="index.html"><i class="ri-home-4-line"></i>Back to Home</a>
@@ -43,26 +43,26 @@
       </div>
     
     <!-- Backend Bundle JavaScript -->
-    <script src="../assets/js/backend-bundle.min.js"></script>
+    <script src="{{url('{{url('../assets/js/backend-bundle.min.js"></script>
     
     <!-- Flextree Javascript-->
-    <script src="../assets/js/flex-tree.min.js"></script>
-    <script src="../assets/js/tree.js"></script>
+    <script src="{{url('{{url('../assets/js/flex-tree.min.js"></script>
+    <script src="{{url('{{url('../assets/js/tree.js"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="../assets/js/table-treeview.js"></script>
+    <script src="{{url('{{url('../assets/js/table-treeview.js"></script>
     
     <!-- SweetAlert JavaScript -->
-    <script src="../assets/js/sweetalert.js"></script>
+    <script src="{{url('{{url('../assets/js/sweetalert.js"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="../assets/js/chart-custom.js"></script>
+    <script src="{{url('{{url('../assets/js/chart-custom.js"></script>
     
     <!-- slider JavaScript -->
-    <script src="../assets/js/slider.js"></script>
+    <script src="{{url('{{url('../assets/js/slider.js"></script>
     
     <!-- app JavaScript -->
-    <script src="../assets/js/app.js"></script>
+    <script src="{{url('{{url('../assets/js/app.js"></script>
   </body>
 
 <!-- Mirrored from templates.iqonic.design/note-plus/html/backend/pages-error-500.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jan 2025 02:31:38 GMT -->

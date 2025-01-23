@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>NotePlus | Responsive Bootstrap 4 Admin Dashboard Template</title>
+      <title>SmeaBook</title>
       
       <!-- Favicon -->
       <link rel="shortcut icon" href="https://templates.iqonic.design/note-plus/html/assets/images/favicon.ico" />

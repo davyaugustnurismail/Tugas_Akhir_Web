@@ -9,10 +9,10 @@ Route::view('/auth/sign-in', 'auth.auth-sign-in')->name('auth.sign-in');
 Route::view('/auth/sign-up', 'auth.auth-sign-up')->name('auth.sign-up');
 
 // Halaman Create Page
-Route::view('/create/new-note-blank', 'create-page.page-new-note5d2b?type=blank')->name('create.new-note1');
-Route::view('/create/new-note-daily', 'create-page.page-new-note7c5e?type=daily')->name('create.new-note2');
-Route::view('/create/new-note-todo', 'create-page.page-new-note8fb2?type=todo')->name('create.new-note3');
-Route::view('/create/new-note-essay', 'create-page.page-new-notefbe?type=essay')->name('create.new-note4');
+Route::view('/create/new-note-blank', 'create-page.page-new-note5d2b')->name('create.new-note1');
+Route::view('/create/new-note-daily', 'create-page.page-new-note7c5e')->name('create.new-note2');
+Route::view('/create/new-note-todo', 'create-page.page-new-note8fb2')->name('create.new-note3');
+Route::view('/create/new-note-essay', 'create-page.page-new-notefbe')->name('create.new-note4');
 
 // Halaman Error Page
 Route::view('/error/500', 'error-page.pages-error-500')->name('error.500');

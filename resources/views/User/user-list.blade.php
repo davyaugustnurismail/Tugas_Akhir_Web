@@ -30,7 +30,7 @@
                                               <a href="#" class="iq-sub-card">
                                                   <div class="media align-items-center cust-card pb-3 border-bottom">
                                                       <div class="">
-                                                          <img class="avatar-50 rounded-small" src="images/user/01.jpg" alt="01">
+                                                          <img class="avatar-50 rounded-small" src="{{url('images/user/01.jpg')}}" alt="01">
                                                       </div>
                                                       <div class="media-body ml-3">
                                                           <div class="d-flex align-items-center justify-content-between">
@@ -44,7 +44,7 @@
                                               <a href="#" class="iq-sub-card">
                                                   <div class="media align-items-center cust-card py-3 border-bottom">
                                                       <div class="">
-                                                          <img class="avatar-50 rounded-small" src="images/user/02.jpg" alt="02">
+                                                          <img class="avatar-50 rounded-small" src="{{url('images/user/02.jpg')}}" alt="02">
                                                       </div>
                                                       <div class="media-body ml-3">
                                                           <div class="d-flex align-items-center justify-content-between">
@@ -58,7 +58,7 @@
                                               <a href="#" class="iq-sub-card">
                                                   <div class="media align-items-center cust-card pt-3">
                                                       <div class="">
-                                                          <img class="avatar-50 rounded-small" src="images/user/03.jpg" alt="03">
+                                                          <img class="avatar-50 rounded-small" src="{{url('images/user/03.jpg')}}" alt="03">
                                                       </div>
                                                       <div class="media-body ml-3">
                                                           <div class="d-flex align-items-center justify-content-between">
@@ -94,7 +94,7 @@
                                               <a href="#" class="iq-sub-card">
                                                   <div class="media align-items-center cust-card pb-3 border-bottom">
                                                       <div class="">
-                                                          <img class="avatar-50 rounded-small" src="images/user/01.jpg" alt="01">
+                                                          <img class="avatar-50 rounded-small" src="{{url('images/user/01.jpg')}}" alt="01">
                                                       </div>
                                                       <div class="media-body ml-3">
                                                           <div class="d-flex align-items-center justify-content-between">
@@ -108,7 +108,7 @@
                                               <a href="#" class="iq-sub-card">
                                                   <div class="media align-items-center cust-card py-3 border-bottom">
                                                       <div class="">
-                                                          <img class="avatar-50 rounded-small" src="images/user/02.jpg" alt="02">
+                                                          <img class="avatar-50 rounded-small" src="{{url('images/user/02.jpg')}}" alt="02">
                                                       </div>
                                                       <div class="media-body ml-3">
                                                           <div class="d-flex align-items-center justify-content-between">
@@ -122,7 +122,7 @@
                                               <a href="#" class="iq-sub-card">
                                                   <div class="media align-items-center cust-card pt-3">
                                                       <div class="">
-                                                          <img class="avatar-50 rounded-small" src="images/user/03.jpg" alt="03">
+                                                          <img class="avatar-50 rounded-small" src="{{url('images/user/03.jpg')}}" alt="03">
                                                       </div>
                                                       <div class="media-body ml-3">
                                                           <div class="d-flex align-items-center justify-content-between">
@@ -195,7 +195,7 @@
                            </thead>
                            <tbody>
                                  <tr>
-                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="images/user/01.jpg" alt="profile"></td>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="{{url('images/user/01.jpg')}}" alt="profile"></td>
                                     <td>Anna Sthesia</td>
                                     <td>(760) 756 7568</td>
                                     <td>annasthesia@gmail.com</td>
@@ -212,7 +212,7 @@
                                     </td>
                                  </tr>
                                  <tr>
-                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="images/user/02.jpg" alt="profile"></td>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="{{url('images/user/02.jpg')}}" alt="profile"></td>
                                     <td>Brock Lee</td>
                                     <td>+62 5689 458 658</td>
                                     <td>brocklee@gmail.com</td>
@@ -229,7 +229,7 @@
                                     </td>
                                  </tr>
                                  <tr>
-                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="images/user/03.jpg" alt="profile"></td>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="{{url('images/user/03.jpg')}}" alt="profile"></td>
                                     <td>Dan Druff</td>
                                     <td>+55 6523 456 856</td>
                                     <td>dandruff@gmail.com</td>
@@ -246,7 +246,7 @@
                                     </td>
                                  </tr>
                                  <tr>
-                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="images/user/04.jpg" alt="profile"></td>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="{{url('images/user/04.jpg')}}" alt="profile"></td>
                                     <td>Hans Olo</td>
                                     <td>+91 2586 253 125</td>
                                     <td>hansolo@gmail.com</td>
@@ -263,7 +263,7 @@
                                     </td>
                                  </tr>
                                  <tr>
-                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="images/user/05.jpg" alt="profile"></td>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="{{url('images/user/05.jpg')}}" alt="profile"></td>
                                     <td>Lynn Guini</td>
                                     <td>+27 2563 456 589</td>
                                     <td>lynnguini@gmail.com</td>
@@ -280,7 +280,7 @@
                                     </td>
                                  </tr>
                                  <tr>
-                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="images/user/06.jpg" alt="profile"></td>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="{{url('images/user/06.jpg')}}" alt="profile"></td>
                                     <td>Eric Shun</td>
                                     <td>+55 25685 256 589</td>
                                     <td>ericshun@gmail.com</td>
@@ -297,7 +297,7 @@
                                     </td>
                                  </tr>
                                  <tr>
-                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="images/user/07.jpg" alt="profile"></td>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="{{url('images/user/07.jpg')}}" alt="profile"></td>
                                     <td>aaronottix</td>
                                     <td>(760) 765 2658</td>
                                     <td>budwiser@ymail.com</td>
@@ -314,7 +314,7 @@
                                     </td>
                                  </tr>
                                  <tr>
-                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="images/user/08.jpg" alt="profile"></td>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="{{url('images/user/08.jpg')}}" alt="profile"></td>
                                     <td>Marge Arita</td>
                                     <td>+27 5625 456 589</td>
                                     <td>margearita@gmail.com</td>
@@ -331,7 +331,7 @@
                                     </td>
                                  </tr>
                                  <tr>
-                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="images/user/09.jpg" alt="profile"></td>
+                                    <td class="text-center"><img class="rounded img-fluid avatar-40" src="{{url('images/user/09.jpg')}}" alt="profile"></td>
                                     <td>Bill Dabear</td>
                                     <td>+55 2563 456 589</td>
                                     <td>billdabear@gmail.com</td>

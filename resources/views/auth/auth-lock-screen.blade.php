@@ -6,7 +6,7 @@
                <div class="col-md-5 col-sm-12 col-12 align-self-center">
                   <div class="sign-user_card">
                      <div class="logo-detail">            
-                           <div class="d-flex align-items-center"><img src="../assets/images/logo.png" class="img-fluid rounded-normal light-logo logo" alt="logo"> <h4 class="logo-title ml-3">NotePlus</h4></div>
+                           <div class="d-flex align-items-center"><img src="{{url('../assets/images/logo.png')}}" class="img-fluid rounded-normal light-logo logo" alt="logo"> <h4 class="logo-title ml-3">NotePlus</h4></div>
                      </div> 
                      <h3 class="mb-2">Hi ! Bud Wiser</h3>
                      <p>Enter your password to access the admin.</p>

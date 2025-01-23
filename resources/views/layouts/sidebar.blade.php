@@ -1,6 +1,6 @@
           <div class="iq-sidebar-logo d-flex align-items-center justify-content-between">
               <a href="{{ url('/') }}" class="header-logo">
-                  <img src="images/logo.png" class="img-fluid rounded-normal light-logo" alt="logo"> <h4 class="logo-title ml-3">NotePlus</h4>
+                  <img src="{{url('images/logo.png')}}" class="img-fluid rounded-normal light-logo" alt="logo"> <h4 class="logo-title ml-3">NotePlus</h4>
               </a>
               <div class="iq-menu-bt-sidebar">
                   <i class="las la-times wrapper-menu"></i>
@@ -8,7 +8,7 @@
           </div>    
           <div class="sidebar-caption dropdown">
               <a href="#" class="iq-user-toggle d-flex align-items-center justify-content-between" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="images/user/1.jpg" class="img-fluid rounded avatar-50 mr-3" alt="user">
+                  <img src="{{url('images/user/1.jpg')}}" class="img-fluid rounded avatar-50 mr-3" alt="user">
                   <div class="caption">
                       <h6 class="mb-0 line-height">Bud Wiser</h6>
                   </div>

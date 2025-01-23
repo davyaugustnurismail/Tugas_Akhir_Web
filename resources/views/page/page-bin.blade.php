@@ -31,7 +31,7 @@
                                             <a href="#" class="iq-sub-card">
                                                 <div class="media align-items-center cust-card pb-3 border-bottom">
                                                     <div class="">
-                                                        <img class="avatar-50 rounded-small" src="../assets/images/user/01.jpg" alt="01">
+                                                        <img class="avatar-50 rounded-small" src="{{url('../assets/images/user/01.jpg')}}" alt="01">
                                                     </div>
                                                     <div class="media-body ml-3">
                                                         <div class="d-flex align-items-center justify-content-between">
@@ -45,7 +45,7 @@
                                             <a href="#" class="iq-sub-card">
                                                 <div class="media align-items-center cust-card py-3 border-bottom">
                                                     <div class="">
-                                                        <img class="avatar-50 rounded-small" src="../assets/images/user/02.jpg" alt="02">
+                                                        <img class="avatar-50 rounded-small" src="{{url('../assets/images/user/02.jpg')}}" alt="02">
                                                     </div>
                                                     <div class="media-body ml-3">
                                                         <div class="d-flex align-items-center justify-content-between">
@@ -59,7 +59,7 @@
                                             <a href="#" class="iq-sub-card">
                                                 <div class="media align-items-center cust-card pt-3">
                                                     <div class="">
-                                                        <img class="avatar-50 rounded-small" src="../assets/images/user/03.jpg" alt="03">
+                                                        <img class="avatar-50 rounded-small" src="{{url('../assets/images/user/03.jpg')}}" alt="03">
                                                     </div>
                                                     <div class="media-body ml-3">
                                                         <div class="d-flex align-items-center justify-content-between">
@@ -95,7 +95,7 @@
                                             <a href="#" class="iq-sub-card">
                                                 <div class="media align-items-center cust-card pb-3 border-bottom">
                                                     <div class="">
-                                                        <img class="avatar-50 rounded-small" src="../assets/images/user/01.jpg" alt="01">
+                                                        <img class="avatar-50 rounded-small" src="{{url('../assets/images/user/01.jpg')}}" alt="01">
                                                     </div>
                                                     <div class="media-body ml-3">
                                                         <div class="d-flex align-items-center justify-content-between">
@@ -109,7 +109,7 @@
                                             <a href="#" class="iq-sub-card">
                                                 <div class="media align-items-center cust-card py-3 border-bottom">
                                                     <div class="">
-                                                        <img class="avatar-50 rounded-small" src="../assets/images/user/02.jpg" alt="02">
+                                                        <img class="avatar-50 rounded-small" src="{{url('../assets/images/user/02.jpg')}}" alt="02">
                                                     </div>
                                                     <div class="media-body ml-3">
                                                         <div class="d-flex align-items-center justify-content-between">
@@ -123,7 +123,7 @@
                                             <a href="#" class="iq-sub-card">
                                                 <div class="media align-items-center cust-card pt-3">
                                                     <div class="">
-                                                        <img class="avatar-50 rounded-small" src="../assets/images/user/03.jpg" alt="03">
+                                                        <img class="avatar-50 rounded-small" src="{{url('../assets/images/user/03.jpg')}}" alt="03">
                                                     </div>
                                                     <div class="media-body ml-3">
                                                         <div class="d-flex align-items-center justify-content-between">
@@ -322,17 +322,17 @@
                                         <ul class="row mb-0 p-0 list-inline flex-wrap align-items-center">
                                             <li class="col-4">
                                                 <a href="#">
-                                                    <img src="../assets/images/gallery/grid/01.jpg" class="img-fluid note-image rounded" alt="" />  
+                                                    <img src="{{url('../assets/images/gallery/grid/01.jpg')}}" class="img-fluid note-image rounded" alt="" />  
                                                 </a> 
                                             </li>
                                             <li class="col-4">
                                                 <a href="#">
-                                                    <img src="../assets/images/gallery/grid/02.jpg" class="img-fluid note-image rounded" alt="" />  
+                                                    <img src="{{url('../assets/images/gallery/grid/02.jpg')}}" class="img-fluid note-image rounded" alt="" />  
                                                 </a> 
                                             </li>
                                             <li class="col-4">
                                                 <a href="#">
-                                                    <img src="../assets/images/gallery/grid/03.jpg" class="img-fluid note-image rounded" alt="" />  
+                                                    <img src="{{url('../assets/images/gallery/grid/03.jpg')}}" class="img-fluid note-image rounded" alt="" />  
                                                 </a> 
                                             </li>
                                         </ul>
@@ -418,7 +418,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card mb-3">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/01.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="{{url('../assets/images/user/01.jpg')}}" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -432,7 +432,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card mb-3">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/02.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="{{url('../assets/images/user/02.jpg')}}" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -446,7 +446,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/03.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="{{url('../assets/images/user/03.jpg')}}" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -558,32 +558,32 @@
                                 <ul class="row mb-0 p-0 list-inline flex-wrap align-items-center">
                                     <li class="col-md-4 mb-4">
                                         <a href="#">
-                                            <img src="../assets/images/gallery/grid/01.jpg" class="img-fluid rounded avatar-150" alt="">  
+                                            <img src="{{url('../assets/images/gallery/grid/01.jpg')}}" class="img-fluid rounded avatar-150" alt="">  
                                         </a> 
                                     </li>
                                     <li class="col-md-4 mb-4">
                                         <a href="#">
-                                            <img src="../assets/images/gallery/grid/02.jpg" class="img-fluid rounded avatar-150" alt="">  
+                                            <img src="{{url('../assets/images/gallery/grid/02.jpg')}}" class="img-fluid rounded avatar-150" alt="">  
                                         </a> 
                                     </li>
                                     <li class="col-md-4 mb-4">
                                         <a href="#">
-                                            <img src="../assets/images/gallery/grid/03.jpg" class="img-fluid rounded avatar-150" alt="">  
+                                            <img src="{{url('../assets/images/gallery/grid/03.jpg')}}" class="img-fluid rounded avatar-150" alt="">  
                                         </a> 
                                     </li>
                                     <li class="col-md-4">
                                         <a href="#">
-                                            <img src="../assets/images/gallery/grid/04.jpg" class="img-fluid rounded avatar-150" alt="">  
+                                            <img src="{{url('../assets/images/gallery/grid/04.jpg')}}" class="img-fluid rounded avatar-150" alt="">  
                                         </a> 
                                     </li>
                                     <li class="col-md-4">
                                         <a href="#">
-                                            <img src="../assets/images/gallery/grid/05.jpg" class="img-fluid rounded avatar-150" alt="">  
+                                            <img src="{{url('../assets/images/gallery/grid/05.jpg')}}" class="img-fluid rounded avatar-150" alt="">  
                                         </a> 
                                     </li>
                                     <li class="col-md-4">
                                         <a href="#">
-                                            <img src="../assets/images/gallery/grid/06.jpg" class="img-fluid rounded avatar-150" alt="">  
+                                            <img src="{{url('../assets/images/gallery/grid/06.jpg')}}" class="img-fluid rounded avatar-150" alt="">  
                                         </a> 
                                     </li>
                                 </ul>
@@ -593,7 +593,7 @@
                                 <li>
                                     <div class="media align-items-center cust-card mb-3">
                                         <div class="">
-                                            <img class="avatar-50 rounded-small" src="../assets/images/user/04.jpg" alt="01">
+                                            <img class="avatar-50 rounded-small" src="{{url('../assets/images/user/04.jpg')}}" alt="01">
                                         </div>
                                         <div class="media-body ml-3">
                                             <div class="d-flex align-items-center justify-content-between">
@@ -626,7 +626,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card mb-3">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/04.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="{{url('../assets/images/user/04.jpg')}}" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -640,7 +640,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card mb-3">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/05.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="{{url('../assets/images/user/05.jpg')}}" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -695,7 +695,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card mb-3">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/06.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="{{url('../assets/images/user/06.jpg')}}" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -709,7 +709,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card mb-3">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/07.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="{{url('../assets/images/user/07.jpg')}}" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -723,7 +723,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card mb-3">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/08.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="{{url('../assets/images/user/08.jpg')}}" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -737,7 +737,7 @@
                                     <li>
                                         <div class="media align-items-center cust-card mb-3">
                                             <div class="">
-                                                <img class="avatar-50 rounded-small" src="../assets/images/user/09.jpg" alt="01">
+                                                <img class="avatar-50 rounded-small" src="{{url('../assets/images/user/09.jpg')}}" alt="01">
                                             </div>
                                             <div class="media-body ml-3">
                                                 <div class="d-flex align-items-center justify-content-between">
