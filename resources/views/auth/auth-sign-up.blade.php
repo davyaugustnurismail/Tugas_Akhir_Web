@@ -1,4 +1,4 @@
-@extends('layouts.loginapp')
+@extends('notebook.layouts.loginapp')
 @section('content') 
 
       <section class="login-content">
@@ -10,7 +10,6 @@
                            <div class="d-flex align-items-center"><img src="{{url('../assets/images/logo.png')}}" class="img-fluid rounded-normal light-logo logo" alt="logo"> <h4 class="logo-title ml-3">SmeaBook</h4></div>
                      </div>  
                      <h3 class="mb-2">Sign Up</h3>
-                     <p>Buat Akun Anda</p>
                      <p>Buat Akun Anda</p>
                      <form>
                         <div class="row">

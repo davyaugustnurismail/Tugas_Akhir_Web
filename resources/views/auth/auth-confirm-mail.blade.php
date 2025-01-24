@@ -1,4 +1,4 @@
-@extends('layouts.loginapp')
+@extends('notebook.layouts.loginapp')
 @section('content') 
 
       <section class="login-content">
