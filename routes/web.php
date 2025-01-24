@@ -42,3 +42,7 @@ Route::view('/user/list', 'notebook.User.user-list')->name('user.list');
 Route::view('/user/privacy-setting', 'notebook.User.user-privacy-setting')->name('user.privacy-setting');
 Route::view('/user/profile-edit', 'notebook.User.user-profile-edit')->name('user.profile-edit');
 Route::view('/user/profile', 'notebook.User.user-profile')->name('user.profile');
+
+// Halaman Admin
+Route::view('/admin', 'admin.index')->name('admin.index');
+Route::view('/admin/account', 'admin.account.index')->name('account.index');
