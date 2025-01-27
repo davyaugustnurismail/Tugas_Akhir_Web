@@ -17,8 +17,14 @@ class LoginController extends Controller
             'password' => 'required',
         ]);
 
-        if (!auth()->attempt($credentials)) {
-            
+        if(!auth()->attempt($credentials)) {
+            return response()->json(['message' => 'Credentials are not valid'], 401);
         }
+
+        $user = auth()->user();
+
+        return response()->json([
+            'token' => $user->createToken('smeapi')->plainTextToken,
+        ]);
     }
 }

@@ -19,7 +19,7 @@ class RegisterController extends Controller
             'password' => bcrypt($request->password),
         ]);
 
-        $token = $user->createToken('auth_token')->plainTextToken;
+        $token = $user->createToken('smeapi')->plainTextToken;
 
         return response()->json([
             'user' => $user,
