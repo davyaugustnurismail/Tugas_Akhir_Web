@@ -6,14 +6,15 @@ use App\Models\Note;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class Note extends Controller
+class NoteController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $notes = Note::all();
+        return view('admin.note.index', ['notes' => $notes]);
     }
 
     /**

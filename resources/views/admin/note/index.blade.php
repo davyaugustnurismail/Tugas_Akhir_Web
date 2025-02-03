@@ -35,40 +35,42 @@
                 </tr>
             </thead>
             <tbody>
+                <?php $no = 1; ?>
+                @foreach ($notes as $note)
                 <tr id="1">
-                    <td><span class="tabledit-span tabledit-identifier">1</span><input
-                            class="tabledit-input tabledit-identifier" type="hidden" name="id" value="1" disabled="">
+                    <td><span class="tabledit-span tabledit-identifier">{{ $no++ }}</span><input
+                            class="tabledit-input tabledit-identifier" type="hidden" name="no" disabled="">
                     </td>
 
-                    <td class="tabledit-view-mode"><span class="tabledit-span">0001</span><input
+                    <td class="tabledit-view-mode"><span class="tabledit-span">{{ $note->id }}</span><input
                             class="tabledit-input form-control input-sm" type="text" name="id" value="0001"
                             style="display: none;" disabled=""></td>
 
-                    <td class="tabledit-view-mode"><span class="tabledit-span">Davy</span><input
+                    <td class="tabledit-view-mode"><span class="tabledit-span"> {{$note->user->name}} </span><input
                             class="tabledit-input form-control input-sm" type="text" name="user_id" value="0001"
                             style="display: none;" disabled=""></td>
 
-                    <td class="tabledit-view-mode"><span class="tabledit-span">Judul</span><input
+                    <td class="tabledit-view-mode"><span class="tabledit-span">{{ $note->judul }}</span><input
                             class="tabledit-input form-control input-sm" type="text" name="judul" value="davy"
                             style="display: none;" disabled=""></td>
 
-                    <td class="tabledit-view-mode"><span class="tabledit-span">Desc</span><input
+                    <td class="tabledit-view-mode"><span class="tabledit-span">{{ $note->description }}</span><input
                             class="tabledit-input form-control input-sm" type="text" name="desc" value="xi-ppl-2"
                             style="display: none;" disabled=""></td>
 
-                    <td class="tabledit-view-mode"><span class="tabledit-span">17 Agustus 2025</span><input
+                    <td class="tabledit-view-mode"><span class="tabledit-span">{{ $note->tanggal }}</span><input
                             class="tabledit-input form-control input-sm" type="text" name="tanggal"
                             value="demo@example.com" style="display: none;" disabled=""></td>
 
-                    <td class="tabledit-view-mode"><span class="tabledit-span">admin123</span><input
+                    <td class="tabledit-view-mode"><span class="tabledit-span">{{ $note->tanda }}</span><input
                             class="tabledit-input form-control input-sm" type="text" name="tanda" value="admin123"
                             style="display: none;" disabled=""></td>
 
-                    <td class="tabledit-view-mode"><span class="tabledit-span">0812345678</span><input
+                    <td class="tabledit-view-mode"><span class="tabledit-span">{{ $note->priority }}</span><input
                             class="tabledit-input form-control input-sm" type="text" name="priority"
                             value="0812345678" style="display: none;" disabled=""></td>
 
-                    <td class="tabledit-view-mode"><span class="tabledit-span">True</span><input
+                    <td class="tabledit-view-mode"><span class="tabledit-span">{{ $note->shared }}</span><input
                             class="tabledit-input form-control input-sm" type="text" name="shared"
                             value="0812345678" style="display: none;" disabled=""></td>
 
@@ -79,8 +81,15 @@
                                 <button type="button" class="tabledit-edit-button btn btn-sm btn-info"
                                     style="float: none; margin: 5px;"><span class="ti-pencil"></span></button>
 
+                            <form action="{{ url('admin/note/' . $note->nip) }}" method="POST" style="display: inline-block">
+                                @csrf
+                                @method('delete')
                                 <button type="button" class="tabledit-delete-button btn btn-sm btn-info"
-                                    style=" float: none; margin: 5px; "><span class="ti-trash"></span></button>
+                                style=" float: none; margin: 5px; " onclick="return confirm ('apakah anda ingin menghapus data?')">
+                                <span class="ti-trash"></span>
+                                </button>
+                            </form>
+                                
 
                             </div>
 
@@ -95,6 +104,7 @@
                         </div>
                     </td>
                 </tr>
+                @endforeach
             </tbody>
         </table>
     </div>
