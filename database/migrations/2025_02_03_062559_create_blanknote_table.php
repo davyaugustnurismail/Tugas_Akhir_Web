@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer('tanda');
             $table->enum( 'priority', ['default','very_low', 'low', 'medium', 'high', 'very_high']);
             $table->boolean('shared');
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

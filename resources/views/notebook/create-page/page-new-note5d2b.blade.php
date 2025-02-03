@@ -155,23 +155,23 @@
                     <div class="card-body write-card pb-4">
                         <div class="row">
                             <div class="col-md-8">
-                                <form action="#">
+                                <form action="{{ route('notes_store') }}" method="POST">
+                                    @csrf
                                     <div class="form-group">
-                                        
-                                        <label class="label-control">Judul</label>
-                                        <input type="text" class="form-control" name="title" placeholder="Nama Judul" value="" data-change="input" data-custom-target="#note-title">
+                                        <label for="title" class="label-control">Judul</label>
+                                        <input type="text" class="form-control" name="title" id="title" placeholder="Nama Judul" value="" data-change="input" data-custom-target="#note-title">
                                     </div>
                                     <div class="form-group">
-                                        <label class="label-control">Deskripsi</label>
-                                        <textarea type="text" class="form-control" name="description" rows="3" data-change="input" data-custom-target="#note-description" placeholder="Isi Deskripsi"></textarea>
+                                        <label for="description" id="description" class="label-control">Deskripsi</label>
+                                        <textarea type="text" class="form-control" name="description" id="description" rows="3" data-change="input" data-custom-target="#note-description" placeholder="Isi Deskripsi"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <label class="label-control">Tanggal</label>
-                                        <input type="date" class="form-control" name="reminder_date" value="2021-01-01" data-change="input" data-custom-target="#note-reminder-date">
+                                        <label for="date" class="label-control">Tanggal</label>
+                                        <input type="date" class="form-control" name="date" id="date" value="2021-01-01" data-change="input" data-custom-target="#note-reminder-date">
                                     </div>
                                     <div class="form-group">
-                                        <label class="label-control">Tanda</label>
-                                        <div id="icon-button">
+                                        <label for="label" class="label-control">Tanda</label>
+                                        <div name="label" id="icon-button label">
                                             <button class="btn btn-outline-primary ml-1 active" type="button" data-change="click" data-custom-target="#note-icon">
                                                 <svg width="23" class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -217,10 +217,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="label-control">Label Prioritas</label>
-                                        <label class="label-control">Label Prioritas</label>
+                                        <label for="priority" class="label-control">Label Prioritas</label>
                                         <div>
-                                            <select name="priority" id="" class="form-control" data-change="select" data-custom-target="color">
+                                            <select name="priority" id="priority" class="form-control" data-change="select" data-custom-target="color">
                                                 <option value="primary">Default</option>
                                                 <option value="success">Very Low</option>
                                                 <option value="info" selected>Low</option>

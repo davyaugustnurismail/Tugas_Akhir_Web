@@ -1,8 +1,9 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Http\Request;
+use App\Http\Controllers\NoteController;
 
 Route::view('/auth/confirm-mail', 'auth.auth-confirm-mail')->name('auth.confirm-mail');
 Route::view('/auth/lock-screen', 'auth.auth-lock-screen')->name('auth.lock-screen');
@@ -49,4 +50,5 @@ Route::view('/user/profile', 'notebook.User.user-profile')->name('user.profile')
 Route::view('/admin', 'admin.index')->name('admin.index');
 Route::view('/admin/account', 'admin.account.index')->name('account.index');
 
-// Logout
+// 
+Route::post('/notes', [NoteController::class, 'store'])->name('notes.store');
