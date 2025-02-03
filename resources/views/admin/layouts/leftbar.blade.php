@@ -28,7 +28,13 @@
                         <li>
                             <a href="{{ route('account.index')}}">
                                 <img src="{{asset('images/svg-icon/ecommerce.svg')}}" class="img-fluid"
-                                    alt="ecommerce"><span>Account</span>
+                                    alt="account"><span>Account</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('note.index')}}">
+                                <img src="{{asset('images/svg-icon/ecommerce.svg')}}" class="img-fluid"
+                                    alt="note"><span>Note</span>
                             </a>
                         </li>
                     </ul>
