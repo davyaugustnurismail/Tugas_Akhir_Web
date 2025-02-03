@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Resources\TodoListResource;
 use App\Models\Todolist;
 use Exception;
+use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 
 class TodolistController extends Controller
@@ -74,7 +75,7 @@ class TodolistController extends Controller
         }
 
         try { 
-            $todolist->updated($data);
+            $todolist->update($data);
             return response()->json([
                 'message' => 'Todolist Updated Succesfull.',
                 'data' => new TodoListResource($todolist)
@@ -89,6 +90,23 @@ class TodolistController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $todolist = Todolist::find($id);
+
+        // Jika data tidak ditemukan, langsung kembalikan response
+        if (!$todolist) {
+            return response()->json([
+                'message' => 'Todolist not found'
+            ], 404);
+        }
+    
+        try { 
+            $todolist->delete();
+    
+            return response()->json([
+                'message' => 'Todolist Deleted Successfully.',
+            ], 200);
+        } catch (Exception $error) {
+            return response()->json(['message' => 'Todolist Deletion Failed'], 500);
+        }
     }
 }
