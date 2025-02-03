@@ -14,6 +14,6 @@ class LogoutController extends Controller
     {
         $request->user()->currentAccessToken()->delete();
 
-        return response()->json(['message' => 'succesfully logged out']);
+        return redirect()->route('auth.sign-in')->with('message', 'Successfully logged out');
     }
 }

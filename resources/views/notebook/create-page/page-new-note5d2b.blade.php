@@ -16,7 +16,6 @@
                 </div>
             </div>
             <div class="card topnav-right">
-                
                 <div class="card-body card-content-right">
                     <ul class="list-inline m-0 p-0 d-flex align-items-center justify-content-around">
                         <li class="nav-item nav-icon dropdown">

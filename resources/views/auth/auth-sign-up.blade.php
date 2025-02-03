@@ -11,35 +11,29 @@
                      </div>  
                      <h3 class="mb-2">Sign Up</h3>
                      <p>Buat Akun Anda</p>
-                     <form>
+                     <form id="registerForm">
                         <div class="row">
                            <div class="col-lg-6">
                               <div class="floating-label form-group">
-                                 <input class="floating-input form-control" type="text" placeholder=" ">
-                                 <label>Full Name</label>
-                              </div>
-                           </div>
-                           <div class="col-lg-6">
-                              <div class="floating-label form-group">
-                                 <input class="floating-input form-control" type="text" placeholder=" ">
-                                 <label>Last Name</label>
+                                 <input class="floating-input form-control" type="text" name="name" placeholder=" ">
+                                 <label>Name</label>
                               </div>
                            </div>
                            <div class="col-lg-12">
                               <div class="floating-label form-group">
-                                 <input class="floating-input form-control" type="email" placeholder=" ">
+                                 <input class="floating-input form-control" type="email" name="email" placeholder=" ">
                                  <label>Email</label>
                               </div>
                            </div>
                            <div class="col-lg-6">
                               <div class="floating-label form-group">
-                                 <input class="floating-input form-control" type="password" placeholder=" ">
+                                 <input class="floating-input form-control" type="password" name="password" placeholder=" ">
                                  <label>Password</label>
                               </div>
                            </div>
                            <div class="col-lg-6">
                               <div class="floating-label form-group">
-                                 <input class="floating-input form-control" type="password" placeholder=" ">
+                                 <input class="floating-input form-control" type="password" name="password_confirmation" placeholder=" ">
                                  <label>Confirm Password</label>
                               </div>
                            </div>
@@ -52,7 +46,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Sign Up</button>
                         <p class="mt-3 mb-0">
-                           Already have an Account <a href="{{ route('auth.sign-in') }}" class="text-primary"><b>Sign In</b></a>
+                           Already have an Account <a href="{{ route('auth.sign-in') }}" class="text-primary"><b>Sign Up</b></a>
                         </p>
                      </form>
                   </div>
@@ -60,4 +54,41 @@
             </div>
          </div>
       </section>
+
+      <script>
+         document.getElementById("registerForm").addEventListener("submit", async function(event) {
+            event.preventDefault(); // Mencegah form reload
+      
+            // Ambil data dari input
+            let formData = {
+               name: document.querySelector("input[name='name']").value,
+               email: document.querySelector("input[name='email']").value,
+               password: document.querySelector("input[name='password']").value,
+               password_confirmation: document.querySelector("input[name='password_confirmation']").value,
+            };
+      
+            try {
+               let response = await fetch("http://127.0.0.1:8000/api/register", {
+                  method: "POST",
+                  headers: {
+                     "Content-Type": "application/json",
+                     "Accept": "application/json"
+                  },
+                  body: JSON.stringify(formData)
+               });
+      
+               let result = await response.json();
+               if (response.ok) {
+                  alert("Registration successful! Please log in.");
+                  window.location.href = "{{ route('auth.sign-in') }}"; // Arahkan ke login
+               } else {
+                  alert("Error: " + result.message);
+               }
+            } catch (error) {
+               console.error("Error:", error);
+               alert("Something went wrong.");
+            }
+         });
+      </script>
+      
 @endsection

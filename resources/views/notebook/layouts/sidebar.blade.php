@@ -1,5 +1,5 @@
-          <div class="iq-sidebar-logo d-flex align-items-center justify-content-between">
-              <a href="{{ url('/') }}" class="header-logo">
+<a href="{{ url('/') }}" class="header-logo">
+    <div class="iq-sidebar-logo d-flex align-items-center justify-content-between">
                   <img src="{{url('images/logo.png')}}" class="img-fluid rounded-normal light-logo" alt="logo"> <h4 class="logo-title ml-3">NotePlus</h4>
               </a>
               <div class="iq-menu-bt-sidebar">
@@ -31,8 +31,9 @@
                       <i class="las la-user-shield font-size-20 mr-1"></i>
                       <span>Privacy Settings</span>
                   </a>
-                  <hr class="my-2">
-                  <a class="dropdown-item" href="{{ route('auth.sign-in') }}">
+                  <hr class="my-2"> 
+                  <a id="logoutBtn" class="dropdown-item">
+
                       <i class="las la-sign-out-alt font-size-20 mr-1"></i>
                       <span>Logout</span>
                   </a>
@@ -618,3 +619,37 @@
               </nav>
               <div class="p-3"></div>
           </div>  
+          <script>
+            document.getElementById('logoutBtn').addEventListener('click', async function() {
+    let token = localStorage.getItem("auth_token");
+
+    // Pastikan token ada
+    if (!token) {
+        alert("You are not logged in.");
+        return;
+    }
+
+    try {
+        let response = await fetch("http://127.0.0.1:8000/api/logout", {
+            method: "POST",
+            headers: {
+                "Authorization": "Bearer " + token,
+                "Content-Type": "application/json"
+            }
+        });
+
+        let result = await response.json();
+
+        if (response.ok) {
+            alert(result.message);
+            localStorage.removeItem("auth_token"); // Hapus token dari penyimpanan
+            window.location.href = "/auth/sign-in?"; // Redirect ke halaman login
+        } else {
+            alert("Logout failed: " + result.message);
+        }
+    } catch (error) {
+        alert("An error occurred while logging out: " + error.message);
+    }
+});
+
+          </script>
