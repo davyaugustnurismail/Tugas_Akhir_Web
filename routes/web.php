@@ -51,4 +51,6 @@ Route::view('/admin', 'admin.index')->name('admin.index');
 Route::view('/admin/account', 'admin.account.index')->name('account.index');
 
 // 
-Route::resource('note', NoteController::class);
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::resource('note', NoteController::class);
+});

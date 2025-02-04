@@ -18,7 +18,7 @@
 <div class="row">
     <!-- Start col -->
 
-    <button type="button" class="btn btn-rounded btn-primary">Tambah Akun</button>
+    <a type="button" class="btn btn-rounded btn-primary" href="{{ route('admin.note.create') }}">Tambah Note</a>
     <div class="table-responsive">
         <table class="table table-striped table-bordered mt-3" id="edit-btn">
             <thead>
@@ -42,7 +42,7 @@
                             class="tabledit-input tabledit-identifier" type="hidden" name="no" disabled="">
                     </td>
 
-                    <td class="tabledit-view-mode"><span class="tabledit-span">{{ $note->id }}</span><input
+                    <td class="tabledit-view-mode"><span class="tabledit-span">{{ $note->note_id }}</span><input
                             class="tabledit-input form-control input-sm" type="text" name="id" value="0001"
                             style="display: none;" disabled=""></td>
 
@@ -78,13 +78,13 @@
                         <div class="tabledit-toolbar btn-toolbar" style="text-align: left;">
                             <div class="btn-group btn-group-sm" style="float: none;">
 
-                                <button type="button" class="tabledit-edit-button btn btn-sm btn-info"
-                                    style="float: none; margin: 5px;"><span class="ti-pencil"></span></button>
+                                <a type="button" class="tabledit-edit-button btn btn-sm btn-info"
+                                    style="float: none; margin: 5px;" href="{{ route('admin.note.edit', $note->note_id) }}"><span class="ti-pencil"></span></a>
 
-                            <form action="{{ url('admin/note/' . $note->nip) }}" method="POST" style="display: inline-block">
+                            <form action="{{ route('admin.note.destroy', $note->note_id) }}" method="POST" style="display: inline-block">
                                 @csrf
                                 @method('delete')
-                                <button type="button" class="tabledit-delete-button btn btn-sm btn-info"
+                                <button type="submit" class="tabledit-delete-button btn btn-sm btn-info"
                                 style=" float: none; margin: 5px; " onclick="return confirm ('apakah anda ingin menghapus data?')">
                                 <span class="ti-trash"></span>
                                 </button>

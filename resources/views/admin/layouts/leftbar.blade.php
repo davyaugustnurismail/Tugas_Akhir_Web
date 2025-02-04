@@ -32,7 +32,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('note.index')}}">
+                            <a href="{{ route('admin.note.index')}}">
                                 <img src="{{asset('images/svg-icon/ecommerce.svg')}}" class="img-fluid"
                                     alt="note"><span>Note</span>
                             </a>
