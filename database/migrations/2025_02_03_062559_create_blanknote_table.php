@@ -14,7 +14,7 @@ return new class extends Migration
             $table->text('description');
             $table->date('tanggal');
             $table->integer('tanda');
-            $table->enum('priority', ['default', 'very_low', 'low', 'medium', 'high', 'very_high']);
+            $table->enum('priority', ['card-bottom-border-success', 'card-bottom-border-purple', 'card-bottom-border-info', 'card-bottom-border-primary', 'card-bottom-border-warning', 'card-bottom-border-danger']);
             $table->boolean('shared');
             $table->bigInteger('user_id')->unsigned();
             $table->timestamps();

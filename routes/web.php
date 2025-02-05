@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NoteController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\NoteUserController;
 
 Route::view('/auth/confirm-mail', 'auth.auth-confirm-mail')->name('auth.confirm-mail');
 Route::view('/auth/lock-screen', 'auth.auth-lock-screen')->name('auth.lock-screen');
@@ -54,3 +56,5 @@ Route::view('/admin/account', 'admin.account.index')->name('account.index');
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('note', NoteController::class);
 });
+
+Route::resource('noteuser', NoteUserController::class);

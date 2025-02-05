@@ -325,10 +325,10 @@
                             <div id="note1" class="tab-pane fade active show">
                                 <div class="icon active animate__animated animate__fadeIn i-grid">
                                     <div class="row">
+                                        @foreach ($notes as $note)
                                         <div class="col-lg-4 col-md-6">
-                                            <div
-                                                class="card card-block card-stretch card-height card-bottom-border-info note-detail">
-                                                <div class="card-header d-flex justify-content-between pb-1">
+                                            <div class="card card-block card-stretch card-height {{ $note->priority }} note-detail">
+                                                <div class="card-header d-flex justify-content-between pb-2">
                                                     <div class="icon iq-icon-box-2 icon-border-info rounded">
                                                         <svg width="23" height="23" class="svg-icon" id="iq-main-01"
                                                             xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -361,83 +361,21 @@
                                                     </div>
                                                 </div>
                                                 <div class="card-body rounded">
-                                                    <h4 class="card-title">Weekly Planner</h4>
-                                                    <p class="mb-3 card-description short">Virtual Digital Marketing
-                                                        Course every week on Monday, Wednesday and Saturday.Virtual
-                                                        Digital Marketing Course every week on Monday</p>
+                                                    <h4 class="card-title">{{ $note->judul }}</h4>
+                                                    <p class="mb-3 card-description short">{{ $note->description }}</p>
                                                 </div>
                                                 <div class="card-footer">
                                                     <div
                                                         class="d-flex align-items-center justify-content-between note-text note-text-info">
                                                         <a href="#" class=""><i
-                                                                class="las la-user-friends mr-2 font-size-20"></i>03
-                                                            share</a>
+                                                                class="las la-user-friends mr-2 font-size-20"></i>share</a>
                                                         <a href="#" class=""><i
-                                                                class="las la-calendar mr-2 font-size-20"></i>12 Jan
-                                                            2021</a>
+                                                                class="las la-calendar mr-2 font-size-20"></i>{{ $note->tanggal }}</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div
-                                                class="card card-block card-stretch card-height card-bottom-border-purple note-detail">
-                                                <div class="card-header d-flex justify-content-between pb-1">
-                                                    <div class="icon iq-icon-box-2 icon-border-purple rounded">
-                                                        <svg width="23" height="23" class="svg-icon" id="iq-main-02"
-                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                            viewBox="0 0 24 24" stroke="currentColor">
-                                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                                stroke-width="2"
-                                                                d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
-                                                        </svg>
-                                                    </div>
-                                                    <div class="card-header-toolbar d-flex align-items-center">
-                                                        <a href="#" data-toggle="tooltip" data-placement="top"
-                                                            class="show-tab" data-show-tab="[href='#note3']" title=""
-                                                            data-original-title="pin content"><i
-                                                                class="las la-thumbtack mr-2"></i></a>
-                                                        <div class="card-header-toolbar d-flex align-items-center">
-                                                            <div class="dropdown">
-                                                                <span class="dropdown-toggle dropdown-bg"
-                                                                    id="note-dropdownMenuButton5" data-toggle="dropdown"
-                                                                    aria-expanded="false" role="button">
-                                                                    <i class="ri-more-fill"></i>
-                                                                </span>
-                                                                <div class="dropdown-menu dropdown-menu-right"
-                                                                    aria-labelledby="note-dropdownMenuButton5" style="">
-                                                                    <a href="#" class="dropdown-item new-note2"
-                                                                        data-toggle="modal" data-target="#new-note2"><i
-                                                                            class="las la-eye mr-3"></i>View</a>
-                                                                    <a href="#" class="dropdown-item edit-note1"
-                                                                        data-toggle="modal" data-target="#edit-note1"><i
-                                                                            class="las la-pen mr-3"></i>Edit</a>
-                                                                    <a class="dropdown-item" data-extra-toggle="delete"
-                                                                        data-closest-elem=".card" href="#"><i
-                                                                            class="las la-trash-alt mr-3"></i>Delete</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body rounded">
-                                                    <h4 class="card-title">Birthday Celebration</h4>
-                                                    <p class="mb-3 card-description short">You can easily share via
-                                                        message, WhatsApp, emails etc. You can also save your notes and
-                                                        edit it later or can easily delete the note.</p>
-                                                </div>
-                                                <div class="card-footer">
-                                                    <div
-                                                        class="d-flex align-items-center justify-content-between note-text note-text-purple">
-                                                        <a href="#" class=""><i
-                                                                class="las la-user mr-2 font-size-20"></i>Only You</a>
-                                                        <a href="#" class=""><i
-                                                                class="las la-calendar mr-2 font-size-20"></i>10 Jan
-                                                            2021</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        @endforeach
                                         <div class="col-lg-4 col-md-6">
                                             <div
                                                 class="card card-block card-stretch card-height card-bottom-border-warning note-detail">
