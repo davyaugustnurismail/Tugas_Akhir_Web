@@ -24,7 +24,8 @@ Route::view('/error/500', 'notebook.error-page.pages-error-500')->name('error.50
 Route::view('/maintenance', 'notebook.error-page.pages-maintenance')->name('error.maintenance');
 
 // Halaman Home
-Route::view('/', 'home.index')->name('home');
+// Route::view('/', 'home.index')->name('home');
+// Route::get('/', [NoteUserController::class, 'index'])->name('home.index');
 Route::get('/', [NoteUserController::class, 'index'])->name('home');
 
 // Halaman Layouts

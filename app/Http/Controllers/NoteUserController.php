@@ -17,7 +17,7 @@ class NoteUserController extends Controller
     public function index()
     {
         $notes = Note::all();
-        return view('home', ['notes' => $notes]);
+        return view('home.index', ['notes' => $notes]);
     }
 
     /**
@@ -26,7 +26,7 @@ class NoteUserController extends Controller
     public function create()
     {
         $users = User::all();
-        return view('create.new-note1', ['users' => $users]);
+        return view('notebook.create-page.page-new-note5d2b', ['users' => $users]);
     }
 
     /**
