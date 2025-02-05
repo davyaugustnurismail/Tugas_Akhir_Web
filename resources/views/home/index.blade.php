@@ -325,10 +325,10 @@
                             <div id="note1" class="tab-pane fade active show">
                                 <div class="icon active animate__animated animate__fadeIn i-grid">
                                     <div class="row">
+                                        @foreach ($notes as $note)
                                         <div class="col-lg-4 col-md-6">
-                                            <div
-                                                class="card card-block card-stretch card-height card-bottom-border-info note-detail">
-                                                <div class="card-header d-flex justify-content-between pb-1">
+                                            <div class="card card-block card-stretch card-height card-bottom-border-info note-detail">
+                                                <div class="card-header d-flex justify-content-between pb-2">
                                                     <div class="icon iq-icon-box-2 icon-border-info rounded">
                                                         <svg width="23" height="23" class="svg-icon" id="iq-main-01"
                                                             xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -361,24 +361,21 @@
                                                     </div>
                                                 </div>
                                                 <div class="card-body rounded">
-                                                    <h4 class="card-title">Weekly Planner</h4>
-                                                    <p class="mb-3 card-description short">Virtual Digital Marketing
-                                                        Course every week on Monday, Wednesday and Saturday.Virtual
-                                                        Digital Marketing Course every week on Monday</p>
+                                                    <h4 class="card-title">{{ $note->judul }}</h4>
+                                                    <p class="mb-3 card-description short">{{ $note->description }}</p>
                                                 </div>
                                                 <div class="card-footer">
                                                     <div
                                                         class="d-flex align-items-center justify-content-between note-text note-text-info">
                                                         <a href="#" class=""><i
-                                                                class="las la-user-friends mr-2 font-size-20"></i>03
-                                                            share</a>
+                                                                class="las la-user-friends mr-2 font-size-20"></i>share</a>
                                                         <a href="#" class=""><i
-                                                                class="las la-calendar mr-2 font-size-20"></i>12 Jan
-                                                            2021</a>
+                                                                class="las la-calendar mr-2 font-size-20"></i>{{ $note->tanggal }}</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        @endforeach
                                         <div class="col-lg-4 col-md-6">
                                             <div
                                                 class="card card-block card-stretch card-height card-bottom-border-purple note-detail">
