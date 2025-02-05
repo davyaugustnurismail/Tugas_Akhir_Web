@@ -155,7 +155,7 @@
                     <div class="card-body write-card pb-4">
                         <div class="row">
                             <div class="col-md-8">
-                                <form action="{{ route('notes_store') }}" method="POST">
+                                <form action="" method="POST">
                                     @csrf
                                     <div class="form-group">
                                         <label for="title" class="label-control">Judul</label>
