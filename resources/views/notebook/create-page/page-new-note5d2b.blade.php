@@ -172,7 +172,7 @@
                                     <div class="form-group">
                                         <label for="tanda" class="label-control">Tanda</label>
                                         <div class="form-group">
-                                            <label class="label-control">Icon</label>
+                                            {{-- <label class="label-control">Icon</label> --}}
                                             <div id="icon-button">
                                                 <label for="tanda1" class="btn btn-outline-primary ml-1 active" type="button" data-change="click" data-custom-target="#note-icon">
                                                     <svg width="23" class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -218,27 +218,36 @@
                                                 </label>
                                             </div>
                                         </div>
-                                            <div class="btn-group" role="group" aria-label="Pilih Tanda" style="visibility: hidden; display: none;">
-                                                <input type="radio" class="btn-check" name="tanda" id="tanda1" value="1" autocomplete="off">
-                                                <input type="radio" class="btn-check" name="tanda" id="tanda2" value="2" autocomplete="off">
-                                                <input type="radio" class="btn-check" name="tanda" id="tanda3" value="3" autocomplete="off">
-                                                <input type="radio" class="btn-check" name="tanda" id="tanda4" value="4" autocomplete="off">
-                                                <input type="radio" class="btn-check" name="tanda" id="tanda5" value="5" autocomplete="off">
-                                                <input type="radio" class="btn-check" name="tanda" id="tanda6" value="6" autocomplete="off">
-                                                <input type="radio" class="btn-check" name="tanda" id="tanda7" value="7" autocomplete="off">
-                                                <input type="radio" class="btn-check" name="tanda" id="tanda8" value="8" autocomplete="off">
-                                            </div>
+                                        <div class="btn-group" role="group" aria-label="Pilih Tanda" style="visibility: hidden; display: none;">
+                                            <input type="radio" class="btn-check" name="tanda" id="tanda1" value="1" autocomplete="off">
+                                            <input type="radio" class="btn-check" name="tanda" id="tanda2" value="2" autocomplete="off">
+                                            <input type="radio" class="btn-check" name="tanda" id="tanda3" value="3" autocomplete="off">
+                                            <input type="radio" class="btn-check" name="tanda" id="tanda4" value="4" autocomplete="off">
+                                            <input type="radio" class="btn-check" name="tanda" id="tanda5" value="5" autocomplete="off">
+                                            <input type="radio" class="btn-check" name="tanda" id="tanda6" value="6" autocomplete="off">
+                                            <input type="radio" class="btn-check" name="tanda" id="tanda7" value="7" autocomplete="off">
+                                            <input type="radio" class="btn-check" name="tanda" id="tanda8" value="8" autocomplete="off">
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="priority" class="label-control">Label Prioritas</label>
                                         <div>
-                                            <select name="priority" id="priority" class="form-control" data-change="select" data-custom-target="color">
-                                                <option value="default">Default</option>
-                                                <option value="very_low">Very Low</option>
-                                                <option value="low" selected>Low</option>
-                                                <option value="medium">Medium</option>
-                                                <option value="high">High</option>
-                                                <option value="very_high">Very High</option>
+                                            <select name="priority" id="priority" class="form-control" data-change="select" data-custom-target="color" >
+                                                <option value="card-bottom-border-success">Default</option>
+                                                <option value="card-bottom-border-purple">Very Low</option>
+                                                <option value="card-bottom-border-info" selected>Low</option>
+                                                <option value="card-bottom-border-primary">Medium</option>
+                                                <option value="card-bottom-border-warning">High</option>
+                                                <option value="card-bottom-border-danger">Very High</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="shared" class="label-control">Label Prioritas</label>
+                                        <div>
+                                            <select name="shared" id="shared" class="form-control" data-change="select">
+                                                <option value="1">privat</option>
+                                                <option value="0">share</option>
                                             </select>
                                         </div>
                                     </div>
@@ -257,7 +266,7 @@
                                 </form>
                             </div>
                             <div class="col-md-4" id="default">
-                                <div class="card card-block card-stretch card-height card-bottom-border-info note-detail" id="update-note">
+                                <div class="card card-block card-stretch card-height card-bottom-border-info note-detail" id="color">
                                     <div class="card-header d-flex justify-content-between pb-1">
                                         <div class="icon iq-icon-box-2 icon-border-info rounded" id="note-icon">
                                             <svg width="23" class="svg-icon" id="iq-main-01" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -273,7 +282,6 @@
                                                 <div class="dropdown-menu dropdown-menu-right"
                                                     aria-labelledby="dropdownMenuButton4" style="">
                                                     <a href="#" class="dropdown-item new-note1" data-toggle="modal" data-custom-target="#new-note1"><i class="ri-eye-line mr-3"></i>View</a>
-                                                    <a class="dropdown-item" href="#"><i class="las la-trash-alt mr-3"></i>Hapus</a>
                                                     <a class="dropdown-item" href="#"><i class="las la-trash-alt mr-3"></i>Hapus</a>
                                                 </div>
                                             </div>

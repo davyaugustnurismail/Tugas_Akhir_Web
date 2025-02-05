@@ -17,7 +17,7 @@ class NoteUserController extends Controller
     public function index()
     {
         $notes = Note::all();
-        return view('home.index', ['notes' => $notes]);
+        return view('home', ['notes' => $notes]);
     }
 
     /**
@@ -40,7 +40,7 @@ class NoteUserController extends Controller
             'description' => 'required',
             'tanggal' => 'required|date',
             'tanda' => 'required|integer|min:1|max:6',
-            'priority' => 'required|in:default,very_low,low,medium,high,very_high',
+            'priority' => 'required|in:card-bottom-border-success,card-bottom-border-purple,card-bottom-border-info,card-bottom-border-primary,card-bottom-border-warning,card-bottom-border-danger',
             // 'shared' => 'required|boolean',
             // 'user_id' => 'required|exists:users,id',
         ], [
@@ -78,7 +78,7 @@ class NoteUserController extends Controller
             // 'user_id' => $request->user_id,
         ]);
 
-        return redirect()->route('home.index')->with('success', 'Catatan Berhasil Ditambahkan');
+        return redirect()->route('home')->with('success', 'Catatan Berhasil Ditambahkan');
     }
 
     /**
@@ -86,7 +86,7 @@ class NoteUserController extends Controller
      */
     public function show(Note $note)
     {
-        return view('home.index', ['note' => $note]);
+        return view('home', ['note' => $note]);
     }
 
     /**
@@ -110,8 +110,8 @@ class NoteUserController extends Controller
             'description' => 'required',
             'tanggal' => 'required|date',
             'tanda' => 'required|integer|min:1|max:6',
-            'priority' => 'required|in:default,very_low,low,medium,high,very_high',
-            // 'shared' => 'required|boolean',
+            'priority' => 'required|in:card-bottom-border-success,card-bottom-border-purple,card-bottom-border-info,card-bottom-border-primary,card-bottom-border-warning,card-bottom-border-danger',
+            'shared' => 'required|boolean',
             // 'user_id' => 'required|exists:users,id',
         ], [
             'judul.required' => 'Judul Wajib Diisi',
@@ -124,8 +124,8 @@ class NoteUserController extends Controller
             'tanda.max' => 'Tanda Maksimal 6',
             'priority.required' => 'Priority Wajib Diisi',
             'priority.in' => 'Priority Tidak Valid',
-            // 'shared.required' => 'Shared Wajib Diisi',
-            // 'shared.boolean' => 'Shared Harus Boolean (0 atau 1)',
+            'shared.required' => 'Shared Wajib Diisi',
+            'shared.boolean' => 'Shared Harus Boolean (0 atau 1)',
             // 'user_id.required' => 'User ID Wajib Diisi',
             // 'user_id.exists' => 'User ID Tidak Valid',
         ]);
@@ -145,11 +145,11 @@ class NoteUserController extends Controller
             'tanggal' => $request->tanggal,
             'tanda' => $request->tanda,
             'priority' => $request->priority,
-            // 'shared' => $request->shared,
+            'shared' => $request->shared,
             // 'user_id' => $request->user_id,
         ]);
 
-        return redirect()->route('home.index')->with('success', 'Catatan Berhasil Diperbarui');
+        return redirect()->route('home')->with('success', 'Catatan Berhasil Diperbarui');
     }
 
     /**
@@ -161,6 +161,6 @@ class NoteUserController extends Controller
         $note = Note::findOrFail($note_id);
         $note->delete();
 
-        return redirect()->route('home.index')->with('success', 'Catatan Berhasil Dihapus');
+        return redirect()->route('home')->with('success', 'Catatan Berhasil Dihapus');
     }
 }
