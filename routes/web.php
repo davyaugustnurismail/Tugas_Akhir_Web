@@ -24,7 +24,9 @@ Route::view('/error/500', 'notebook.error-page.pages-error-500')->name('error.50
 Route::view('/maintenance', 'notebook.error-page.pages-maintenance')->name('error.maintenance');
 
 // Halaman Home
-Route::view('/', 'home.index')->name('home');
+// Route::view('/', 'home.index')->name('home');
+// Route::get('/', [NoteUserController::class, 'index'])->name('home.index');
+Route::get('/', [NoteUserController::class, 'index'])->name('home');
 
 // Halaman Layouts
 Route::view('/layout/app', 'notebook.layouts.app')->name('layout.app');
@@ -50,11 +52,11 @@ Route::view('/user/profile', 'notebook.User.user-profile')->name('user.profile')
 
 // Halaman Admin
 Route::view('/admin', 'admin.index')->name('admin.index');
-Route::view('/admin/account', 'admin.account.index')->name('account.index');
 
 // 
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('note', NoteController::class);
+    Route::resource('account', UserController::class);
 });
 
 Route::resource('noteuser', NoteUserController::class);
