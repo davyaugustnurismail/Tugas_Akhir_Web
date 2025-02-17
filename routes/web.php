@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NoteController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\NoteUserController;
+use App\Http\Controllers\TodoUserController;
 
 Route::view('/auth/confirm-mail', 'auth.auth-confirm-mail')->name('auth.confirm-mail');
 Route::view('/auth/lock-screen', 'auth.auth-lock-screen')->name('auth.lock-screen');
@@ -25,8 +26,9 @@ Route::view('/maintenance', 'notebook.error-page.pages-maintenance')->name('erro
 
 // Halaman Home
 // Route::view('/', 'home.index')->name('home');
-// Route::get('/', [NoteUserController::class, 'index'])->name('home.index');
-Route::get('/', [NoteUserController::class, 'index'])->name('home');
+// Route::get('/', [NoteUserController::class, 'index'])->name('home');
+// Route::get('/', [TodoUserController::class, 'index'])->name('home');
+Route::get('/', [NoteUserController::class, 'index'])->name('home.index');
 
 // Halaman Layouts
 Route::view('/layout/app', 'notebook.layouts.app')->name('layout.app');
@@ -60,3 +62,5 @@ Route::prefix('admin')->name('admin.')->group(function () {
 });
 
 Route::resource('noteuser', NoteUserController::class);
+
+Route::resource('todouser', TodoUserController::class);
