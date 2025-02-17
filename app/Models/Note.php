@@ -19,7 +19,7 @@ class Note extends Model
     protected $casts = [
         'shared' => 'boolean',
         'tanggal' => 'date',
-    ];
+    ];  
 
     public function user()
     {

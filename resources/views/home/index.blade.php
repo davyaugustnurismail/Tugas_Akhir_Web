@@ -242,11 +242,11 @@
                                 role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link home active show" data-toggle="pill" data-init="note"
-                                        href="#note1" role="tab" aria-selected="false">All</a>
+                                        href="#note1" role="tab" aria-selected="false">Notes</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link home" data-toggle="pill" data-init="shared-note" href="#note2"
-                                        role="tab" aria-selected="true">Shared Notes</a>
+                                        role="tab" aria-selected="true">TodoList</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link home" data-toggle="pill" data-init="pin-note" href="#note3"
@@ -370,7 +370,7 @@
                                                         <a href="#" class=""><i
                                                                 class="las la-user-friends mr-2 font-size-20"></i>share</a>
                                                         <a href="#" class=""><i
-                                                                class="las la-calendar mr-2 font-size-20"></i>{{ $note->tanggal }}</a>
+                                                                class="las la-calendar mr-2 font-size-20"></i>{{ $note->tanggal->format('D d M Y') }}</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1101,10 +1101,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="card-body rounded">
-                                                    <h4 class="card-title">Weekly Planner</h4>
-                                                    <p class="mb-3 card-description short">Virtual Digital Marketing
-                                                        Course every week on Monday, Wednesday and Saturday.Virtual
-                                                        Digital Marketing Course every week on Monday</p>
+                                                    <h4 class="card-title">KERJAIN WOYYYYY</h4>
+                                                    <p class="mb-3 card-description short">konci</p>
                                                 </div>
                                                 <div class="card-footer">
                                                     <div

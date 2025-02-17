@@ -26,9 +26,9 @@ Route::view('/maintenance', 'notebook.error-page.pages-maintenance')->name('erro
 
 // Halaman Home
 // Route::view('/', 'home.index')->name('home');
-// Route::get('/', [NoteUserController::class, 'index'])->name('home.index');
-Route::get('/', [NoteUserController::class, 'index'])->name('home');
-Route::get('/', [TodoUserController::class, 'index'])->name('home');
+// Route::get('/', [NoteUserController::class, 'index'])->name('home');
+// Route::get('/', [TodoUserController::class, 'index'])->name('home');
+Route::get('/', [NoteUserController::class, 'index'])->name('home.index');
 
 // Halaman Layouts
 Route::view('/layout/app', 'notebook.layouts.app')->name('layout.app');
