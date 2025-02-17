@@ -26,7 +26,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="{{ route('account.index')}}">
+                            <a href="{{ route('admin.account.index')}}">
                                 <img src="{{asset('images/svg-icon/ecommerce.svg')}}" class="img-fluid"
                                     alt="account"><span>Account</span>
                             </a>

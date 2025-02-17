@@ -18,7 +18,7 @@
 <div class="row">
     <!-- Start col -->
 
-    <button type="button" class="btn btn-rounded btn-primary">Tambah Akun</button>
+    <a type="button" class="btn btn-rounded btn-primary" href="{{route('admin.account.create')}}">Tambah Akun</a>
     <div class="table-responsive">
         <table class="table table-striped table-bordered mt-3" id="edit-btn">
             <thead>
@@ -26,7 +26,6 @@
                     <th>No</th>
                     <th>Id</th>
                     <th>Nama</th>
-                    <th>Kelas</th>
                     <th>Email</th>
                     <th>Password</th>
                     <th>No Telepon</th>
