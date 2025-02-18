@@ -147,7 +147,8 @@
                             </div>
                         </li>  
                     </ul>
-                </div>            </div>
+                </div>            
+            </div>
         </div>
         <div class="row">
             <div class="col-lg-12">                
@@ -155,19 +156,19 @@
                     <div class="card-body write-card pb-4">
                         <div class="row">
                             <div class="col-md-8">
-                                <form action="{{ route('notes_store') }}" method="POST">
+                                <form action="{{ route('admin.note.index') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group">
-                                        <label for="title" class="label-control">Judul</label>
-                                        <input type="text" class="form-control" name="title" id="title" placeholder="Nama Judul" value="" data-change="input" data-custom-target="#note-title">
+                                        <label for="judul" class="label-control">Judul</label>
+                                        <input type="text" class="form-control" name="judul" id="judul" placeholder="Nama Judul" value="" data-change="input" data-custom-target="#note-title">
                                     </div>
                                     <div class="form-group">
                                         <label for="description" id="description" class="label-control">Deskripsi</label>
                                         <textarea type="text" class="form-control" name="description" id="description" rows="3" data-change="input" data-custom-target="#note-description" placeholder="Isi Deskripsi"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <label for="date" class="label-control">Tanggal</label>
-                                        <input type="date" class="form-control" name="date" id="date" value="2021-01-01" data-change="input" data-custom-target="#note-reminder-date">
+                                        <label for="tanggal" class="label-control">Tanggal</label>
+                                        <input type="date" class="form-control" name="tanggal" id="tanggal" value="2021-01-01" data-change="input" data-custom-target="#note-reminder-date">
                                     </div>
                                     <div class="form-group">
                                         <label for="label" class="label-control">Tanda</label>
@@ -260,7 +261,6 @@
                                                 <div class="dropdown-menu dropdown-menu-right"
                                                     aria-labelledby="dropdownMenuButton4" style="">
                                                     <a href="#" class="dropdown-item new-note1" data-toggle="modal" data-custom-target="#new-note1"><i class="ri-eye-line mr-3"></i>View</a>
-                                                    <a class="dropdown-item" href="#"><i class="las la-trash-alt mr-3"></i>Hapus</a>
                                                     <a class="dropdown-item" href="#"><i class="las la-trash-alt mr-3"></i>Hapus</a>
                                                 </div>
                                             </div>
