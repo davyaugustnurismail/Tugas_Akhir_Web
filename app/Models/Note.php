@@ -10,16 +10,16 @@ class Note extends Model
     use HasFactory;
 
     protected $table = 'blanknote';
-    protected $primaryKey = 'note_id'; // Menentukan primary key
-    protected $keyType = 'int'; // Menentukan tipe data primary key
-    public $incrementing = true; // Menentukan auto-increment
+    protected $primaryKey = 'note_id';
+    protected $keyType = 'int';
+    public $incrementing = true;
 
     protected $fillable = ['judul', 'description', 'tanggal', 'tanda', 'priority', 'shared', 'user_id'];
 
     protected $casts = [
         'shared' => 'boolean',
         'tanggal' => 'date',
-    ];
+    ];  
 
     public function user()
     {

@@ -4,6 +4,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NoteController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\NoteUserController;
+use App\Http\Controllers\TodoUserController;
 
 Route::view('/auth/confirm-mail', 'auth.auth-confirm-mail')->name('auth.confirm-mail');
 Route::view('/auth/lock-screen', 'auth.auth-lock-screen')->name('auth.lock-screen');
@@ -22,7 +25,10 @@ Route::view('/error/500', 'notebook.error-page.pages-error-500')->name('error.50
 Route::view('/maintenance', 'notebook.error-page.pages-maintenance')->name('error.maintenance');
 
 // Halaman Home
-Route::view('/', 'home.index')->name('home');
+// Route::view('/', 'home.index')->name('home');
+// Route::get('/', [NoteUserController::class, 'index'])->name('home');
+// Route::get('/', [TodoUserController::class, 'index'])->name('home');
+Route::get('/', [NoteUserController::class, 'index'])->name('home.index');
 
 // Halaman Layouts
 Route::view('/layout/app', 'notebook.layouts.app')->name('layout.app');
@@ -48,9 +54,13 @@ Route::view('/user/profile', 'notebook.User.user-profile')->name('user.profile')
 
 // Halaman Admin
 Route::view('/admin', 'admin.index')->name('admin.index');
-Route::view('/admin/account', 'admin.account.index')->name('account.index');
 
 // 
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('note', NoteController::class);
+    Route::resource('account', UserController::class);
 });
+
+Route::resource('noteuser', NoteUserController::class);
+
+Route::resource('todouser', TodoUserController::class);

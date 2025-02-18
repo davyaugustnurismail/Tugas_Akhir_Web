@@ -36,7 +36,7 @@
             </thead>
             <tbody>
                 <?php $no = 1; ?>
-                @foreach ($notes as $note)
+              @foreach ($notes as $note)  
                 <tr id="1">
                     <td><span class="tabledit-span tabledit-identifier">{{ $no++ }}</span><input
                             class="tabledit-input tabledit-identifier" type="hidden" name="no" disabled="">
@@ -44,10 +44,6 @@
 
                     <td class="tabledit-view-mode"><span class="tabledit-span">{{ $note->note_id }}</span><input
                             class="tabledit-input form-control input-sm" type="text" name="id" value="0001"
-                            style="display: none;" disabled=""></td>
-
-                    <td class="tabledit-view-mode"><span class="tabledit-span"> {{$note->user->name}} </span><input
-                            class="tabledit-input form-control input-sm" type="text" name="user_id" value="0001"
                             style="display: none;" disabled=""></td>
 
                     <td class="tabledit-view-mode"><span class="tabledit-span">{{ $note->judul }}</span><input
