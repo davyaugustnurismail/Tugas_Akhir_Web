@@ -46,10 +46,6 @@
                             class="tabledit-input form-control input-sm" type="text" name="id" value="0001"
                             style="display: none;" disabled=""></td>
 
-                    <td class="tabledit-view-mode"><span class="tabledit-span"> {{$note->user->name}} </span><input
-                            class="tabledit-input form-control input-sm" type="text" name="user_id" value="0001"
-                            style="display: none;" disabled=""></td>
-
                     <td class="tabledit-view-mode"><span class="tabledit-span">{{ $note->judul }}</span><input
                             class="tabledit-input form-control input-sm" type="text" name="judul" value="davy"
                             style="display: none;" disabled=""></td>
