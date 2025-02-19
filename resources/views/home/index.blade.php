@@ -462,7 +462,7 @@
                                                 <table class="table  tbl-server-info">
                                                     <thead>
                                                         <tr class="ligth">
-                                                            <th class="w-50" scope="col">Title</th>
+                                                            <th class="w-50" scope="col">Judul</th>
                                                             <th scope="col">Permission</th>
                                                             <th scope="col">Created At</th>
                                                             <th scope="col">Action</th>
