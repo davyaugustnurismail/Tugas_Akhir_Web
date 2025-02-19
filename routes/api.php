@@ -16,13 +16,9 @@ Route::get('/user', function (Request $request) {
 //
 // Route::post('/register', RegisterController::class);
 Route::post('/login', [AuthController::class, 'login'])->name('auth.login');
-
-Route::middleware('auth:sanctum')->post('/logout', [AuthController::class, 'logout']);
-
-
-// Asli ini
 Route::post('/register', [AuthController::class, 'register']);
 
-// todos
-
-Route::apiResource('/todos', TodolistController::class)->middleware('auth:sanctum');
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post('/logout', [AuthController::class, 'logout']);
+    Route::apiResource('/todos', TodolistController::class);
+});
