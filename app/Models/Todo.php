@@ -13,7 +13,7 @@ class Todo extends Model
     protected $keyType = 'int'; // Menentukan tipe data primary key
     public $incrementing = true; // Menentukan auto-increment
 
-    protected $fillable = ['judul', 'todo', 'tanggal', 'tanda', 'priority', 'shared', 'user_id'];
+    protected $fillable = ['judul', 'description', 'tanggal', 'user_id'];
 
     protected $casts = [
         'shared' => 'boolean',

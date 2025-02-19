@@ -16,8 +16,8 @@ class TodoUserController extends Controller
      */
     public function index()
     {
-        $todo = Todo::all();
-        return view("home.index", ['todo' => $todo]);
+        $todos = Todo::all();
+        return view("home.index", ['todo' => $todos]);
     }
 
     /**
@@ -36,21 +36,13 @@ class TodoUserController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'judul' => 'required',
-            'todo' => 'required',
+            'description' => 'required',
             'tanggal' => 'required|date',
-            'tanda' => 'required|integer|min:1|max:6',
-            'priority' => 'required|in:card-bottom-border-success,card-bottom-border-purple,card-bottom-border-info,card-bottom-border-primary,card-bottom-border-warning,card-bottom-border-danger',
         ], [
             'judul.required' => 'Judul Wajib Diisi',
-            'todo.required' => 'Todo Wajib Diisi',
+            'description.required' => 'description Wajib Diisi',
             'tanggal.required' => 'Tanggal Wajib Diisi',
             'tanggal.date' => 'Tanggal Harus Berformat Tanggal',
-            'tanda.required' => 'Tanda Wajib Diisi',
-            'tanda.integer' => 'Tanda Harus Angka',
-            'tanda.min' => 'Tanda Minimal 1',
-            'tanda.max' => 'Tanda Maksimal 6',
-            'priority.required' => 'Priority Wajib Diisi',
-            'priority.in' => 'Priority Tidak Valid',
             // 'shared.required' => 'Shared Wajib Diisi',
             // 'shared.boolean' => 'Shared Harus Boolean (0 atau 1)',
             // 'user_id.required' => 'User ID Wajib Diisi',
@@ -65,23 +57,21 @@ class TodoUserController extends Controller
 
         Todo::create([
             'judul' => $request->judul,
-            'todo' => $request->todo,
+            'description' => $request->description,
             'tanggal' => $request->tanggal,
-            'tanda' => $request->tanda,
-            'priority' => $request->priority,
             // 'shared' => $request->shared,
             // 'user_id' => $request->user_id,
         ]);
 
-        return redirect()->route('home')->with('success', 'Catatan Berhasil Ditambahkan');
+        return redirect()->route('home.index')->with('success', 'Catatan Berhasil Ditambahkan');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Todo $todo)
+    public function show(Todo $todos)
     {
-        return view('home', ['Todo' => $todo]);
+        return view('home.index', ['Todo' => $todos]);
     }
 
     /**
@@ -89,9 +79,9 @@ class TodoUserController extends Controller
      */
     public function edit($todo_id)
     {
-        $todo = Todo::findOrfail($todo_id);
+        $todos = Todo::findOrfail($todo_id);
         $users = User::all();
-        return view('/', ['todo' => $todo, 'users' => $users]);
+        return view('/', ['todo' => $todos, 'users' => $users]);
     }
 
     /**
@@ -101,25 +91,15 @@ class TodoUserController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'judul' => 'required',
-            'todo' => 'required',
+            'description' => 'required',
             'tanggal' => 'required|date',
-            'tanda' => 'required|integer|min:1|max:6',
-            'priority' => 'required|in:card-bottom-border-success,card-bottom-border-purple,card-bottom-border-info,card-bottom-border-primary,card-bottom-border-warning,card-bottom-border-danger',
             'shared' => 'required|boolean',
             // 'user_id' => 'required|exists:users,id',
         ], [
             'judul.required' => 'Judul Wajib Diisi',
-            'todo.required' => 'Todo Wajib Diisi',
+            'description.required' => 'description Wajib Diisi',
             'tanggal.required' => 'Tanggal Wajib Diisi',
             'tanggal.date' => 'Tanggal Harus Berformat Tanggal',
-            'tanda.required' => 'Tanda Wajib Diisi',
-            'tanda.integer' => 'Tanda Harus Angka',
-            'tanda.min' => 'Tanda Minimal 1',
-            'tanda.max' => 'Tanda Maksimal 6',
-            'priority.required' => 'Priority Wajib Diisi',
-            'priority.in' => 'Priority Tidak Valid',
-            'shared.required' => 'Shared Wajib Diisi',
-            'shared.boolean' => 'Shared Harus Boolean (0 atau 1)',
             // 'user_id.required' => 'User ID Wajib Diisi',
             // 'user_id.exists' => 'User ID Tidak Valid',
         ]);
@@ -130,19 +110,16 @@ class TodoUserController extends Controller
 
         Log::info('Data yang akan diperbarui:', $request->all());
 
-        $note = Todo::findOrFail($todo_id);
+        $todos = Todo::findOrFail($todo_id);
 
-        $note->update([
+        $todos->update([
             'judul' => $request->judul,
-            'todo' => $request->todo,
+            'description' => $request->description,
             'tanggal' => $request->tanggal,
-            'tanda' => $request->tanda,
-            'priority' => $request->priority,
-            'shared' => $request->shared,
             // 'user_id' => $request->user_id,
         ]);
 
-        return redirect()->route('home')->with('success', 'Catatan Berhasil Diperbarui');
+        return redirect()->route('home.index')->with('success', 'Catatan Berhasil Diperbarui');
     }
 
     /**
@@ -150,9 +127,9 @@ class TodoUserController extends Controller
      */
     public function destroy(string $todo_id)
     {
-        $todo = Todo::findOrFail($todo_id);
-        $todo->delete();
+        $todos = Todo::findOrFail($todo_id);
+        $todos->delete();
 
-        return redirect()->route('home')->with('success', 'Catatan Berhasil Dihapus');
+        return redirect()->route('home.index')->with('success', 'Catatan Berhasil Dihapus');
     }
 }

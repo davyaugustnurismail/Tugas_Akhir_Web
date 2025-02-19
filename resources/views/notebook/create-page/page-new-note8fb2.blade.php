@@ -157,107 +157,20 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <form action="{{ route('todouser.store') }}" method="POST">
+                                    @csrf
                                     <div class="form-group">
                                         <label for="judul" class="label-control">judul</label>
-                                        <input type="text" class="form-control" name="judul" placeholder="Example Note" value="" data-change="input" data-custom-target="#note-title">
+                                        <input type="text" class="form-control" name="judul" placeholder="Example TodoList" value="" data-change="input" data-custom-target="#note-title">
                                     </div>
                                     <div class="form-group">
-                                        <label for="todo" class="label-control">Todolist</label>
-                                        {{-- <input type="text" class="form-control" name="todo[]" rows="3" data-change="input" data-custom-target="#note-description" placeholder="todolist 1"></input>
-                                        <button type="button" class="btn btn-primary mt-2" id="add-todo">Tambah</button> --}}
-                                        <div id="todo-list">
-                                            <div class="todo-item d-flex">
-                                                <input type="text" class="form-control" name="todo[]" data-custom-target="#note-description" placeholder="Todolist 1">
-                                                <button type="button" class="btn btn-danger ml-2 remove-todo">X</button>
-                                            </div>
-                                        </div>
-                                        <button type="button" class="btn btn-primary mt-2" id="add-todo">Tambah Todolist</button>
-                                    </div>
+                                        <label for="description" id="description" class="label-control">Deskripsi</label>
+                                        <textarea type="text" class="form-control" name="description" id="description" rows="3"
+                                          data-change="input" data-custom-target="#note-description"
+                                          placeholder="Isi Deskripsi"></textarea>
+                                     </div>
                                     <div class="form-group">
                                         <label for="tanggal" class="label-control">Tanggal</label>
                                         <input type="date" class="form-control" name="tanggal" value="2021-01-01" data-change="input" data-custom-target="#note-reminder-date">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="tanda" class="label-control">Tanda</label>
-                                        <div class="form-group">
-                                            {{-- <label class="label-control">Icon</label> --}}
-                                            <div id="icon-button">
-                                                <label for="tanda1" class="btn btn-outline-primary ml-1 active" type="button" data-change="click" data-custom-target="#note-icon">
-                                                    <svg width="23" class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                                    </svg>
-                                                </label>
-                                                <label for="tanda2" class="btn btn-outline-primary ml-1" type="button" data-change="click" data-custom-target="#note-icon">
-                                                    <svg width="23" class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
-                                                    </svg>
-                                                </label>
-                                                <label for="tanda3" class="btn btn-outline-primary ml-1" type="button" data-change="click" data-custom-target="#note-icon">
-                                                    <svg width="23" class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
-                                                    </svg>
-                                                </label>
-                                                <label for="tanda4" class="btn btn-outline-primary ml-1" type="button" data-change="click" data-custom-target="#note-icon">
-                                                    <svg width="23" class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
-                                                    </svg>
-                                                </label>
-                                                <label for="tanda5" class="btn btn-outline-primary ml-1" type="button" data-change="click" data-custom-target="#note-icon">
-                                                    <svg width="23" class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"></path>
-                                                    </svg>
-                                                </label>
-                                                <label for="tanda6" class="btn btn-outline-primary ml-1" type="button" data-change="click" data-custom-target="#note-icon">
-                                                    <svg width="23" class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                    </svg>
-                                                </label>
-                                                <label for="tanda7" class="btn btn-outline-primary ml-1" type="button" data-change="click" data-custom-target="#note-icon">
-                                                    <svg width="23" class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
-                                                    </svg>
-                                                </label>
-                                                <label for="tanda8" class="btn btn-outline-primary ml-1" type="button" data-change="click" data-custom-target="#note-icon">
-                                                    <svg width="23" class="svg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                    </svg>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="btn-group" role="group" aria-label="Pilih Tanda" style="visibility: hidden; display: none;">
-                                            <input type="radio" class="btn-check" name="tanda" id="tanda1" value="1" autocomplete="off">
-                                            <input type="radio" class="btn-check" name="tanda" id="tanda2" value="2" autocomplete="off">
-                                            <input type="radio" class="btn-check" name="tanda" id="tanda3" value="3" autocomplete="off">
-                                            <input type="radio" class="btn-check" name="tanda" id="tanda4" value="4" autocomplete="off">
-                                            <input type="radio" class="btn-check" name="tanda" id="tanda5" value="5" autocomplete="off">
-                                            <input type="radio" class="btn-check" name="tanda" id="tanda6" value="6" autocomplete="off">
-                                            <input type="radio" class="btn-check" name="tanda" id="tanda7" value="7" autocomplete="off">
-                                            <input type="radio" class="btn-check" name="tanda" id="tanda8" value="8" autocomplete="off">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="priority" class="label-control">Label Prioritas</label>
-                                        <div>
-                                            <select name="priority" id="priority" class="form-control" data-change="select" data-custom-target="color" >
-                                                <option value="card-bottom-border-success">Default</option>
-                                                <option value="card-bottom-border-purple">Very Low</option>
-                                                <option value="card-bottom-border-info" selected>Low</option>
-                                                <option value="card-bottom-border-primary">Medium</option>
-                                                <option value="card-bottom-border-warning">High</option>
-                                                <option value="card-bottom-border-danger">Very High</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="shared" class="label-control">Label Prioritas</label>
-                                        <div>
-                                            <select name="shared" id="shared" class="form-control" data-change="select">
-                                                <option value="1">privat</option>
-                                                <option value="0">share</option>
-                                            </select>
-                                        </div>
                                     </div>
                                     <button type="reset" class="btn btn-outline-primary" data-reset="note-reset">
                                         <svg width="20" class="svg-icon" id="new-note-reset" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

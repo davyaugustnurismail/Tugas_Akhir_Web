@@ -695,6 +695,7 @@
                             <div id="note2" class="tab-pane fade">
                                 <div class="icon active animate__animated animate__fadeIn i-grid">
                                     <div class="row">
+                                        @foreach ($todos as $todo)
                                         <div class="col-lg-4 col-md-6">
                                             <div
                                                 class="card card-block card-stretch card-height card-bottom-border-danger note-detail">
@@ -735,11 +736,11 @@
                                                     </div>
                                                 </div>
                                                 <div class="card-body rounded">
-                                                    <h4 class="card-title">INII TODO LIST</h4>
+                                                    <h4 class="card-title">TodoList</h4>
 
                                                     <div class="checkbox mb-2">
                                                         <input type="checkbox" class="checkbox-input mr-3" id="checkbox4">
-                                                        <label for="checkbox4" class="note-checkbox mb-0">Chapter 1 notes.</label>
+                                                        <label for="checkbox4" class="note-checkbox mb-0">{{ $todo->judul }}</label>
                                                     </div>
 
                                                 </div>
@@ -756,6 +757,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        @endforeach
                                     </div>
                                 </div>
 

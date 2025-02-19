@@ -78,7 +78,7 @@ class NoteUserController extends Controller
             // 'user_id' => $request->user_id,
         ]);
 
-        return redirect()->route('home')->with('success', 'Catatan Berhasil Ditambahkan');
+        return redirect()->route('home.index')->with('success', 'Catatan Berhasil Ditambahkan');
     }
 
     /**
@@ -86,7 +86,7 @@ class NoteUserController extends Controller
      */
     public function show(Note $note)
     {
-        return view('home', ['note' => $note]);
+        return view('home.index', ['note' => $note]);
     }
 
     /**
@@ -149,7 +149,7 @@ class NoteUserController extends Controller
             // 'user_id' => $request->user_id,
         ]);
 
-        return redirect()->route('home')->with('success', 'Catatan Berhasil Diperbarui');
+        return redirect()->route('home.index')->with('success', 'Catatan Berhasil Diperbarui');
     }
 
     /**
@@ -161,6 +161,6 @@ class NoteUserController extends Controller
         $note = Note::findOrFail($note_id);
         $note->delete();
 
-        return redirect()->route('home')->with('success', 'Catatan Berhasil Dihapus');
+        return redirect()->route('home.index')->with('success', 'Catatan Berhasil Dihapus');
     }
 }
